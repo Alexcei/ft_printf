@@ -1,0 +1,3 @@
+/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/it_is_my_printf.dir

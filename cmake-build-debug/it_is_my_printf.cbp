@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="it_is_my_printf"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="it_is_my_printf">
+				<Option output="/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/it_is_my_printf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 it_is_my_printf"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="it_is_my_printf/fast">
+				<Option output="/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/it_is_my_printf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 it_is_my_printf/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_atoi.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_bzero.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_intlen.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_isalnum.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_isalpha.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_isascii.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_isblank.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_isdigit.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_isprint.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_isspace.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_itoa.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_list_reverse.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_lstadd.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_lstdel.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_lstdelone.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_lstiter.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_lstmap.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_lstnew.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_memalloc.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_memccpy.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_memchr.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_memcmp.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_memcpy.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_memdel.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_memmove.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_memset.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_putchar.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_putchar_fd.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_putendl.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_putendl_fd.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_putnbr.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_putnbr_fd.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_putstr.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_putstr_fd.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strcat.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strchr.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strclr.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strcmp.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strcpy.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strdel.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strdup.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strequ.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_striter.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_striteri.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strjoin.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strlcat.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strlen.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strmap.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strmapi.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strncat.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strncmp.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strncpy.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strnequ.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strnew.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strnlen.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strnstr.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strrchr.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strsplit.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strstr.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strsub.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_strtrim.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_tolower.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/ft_toupper.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/libft.h">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/main.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
