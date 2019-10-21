@@ -6,40 +6,42 @@
 #    By: bpole <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/21 20:29:07 by bpole             #+#    #+#              #
-#    Updated: 2019/10/21 22:38:39 by bpole            ###   ########.fr        #
+#    Updated: 2019/10/21 20:41:34 by bpole            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+C = clang
+
 NAME = libftprintf.a
-
-SRC = ft_printf.c \
-	  parser.c \
-
-OBJ = $(SRC:.c=.o)
 
 FLAGS = -Wall -Wextra -Werror
 
-LIBFT = ./libft/
+LIB_DIT = libft/
 
 HEAD = ft_printf.h
 
+SRC = ft_printf.c \
+	  parser.c \
+	  parser_form.c \
+      output_s \
+
+LIB_FILES = *.c
+
+LIBFT = $(addprefix $(LIB_DIR), $(LIB_FILES))
+
+OBJS = $(SRC:.c=.o) $(LIB_FILES:.c=.o)
+
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	$(MAKE) -C $(LIBFT)
-	cp libft/libft.a ./$(NAME)
-	ar rc $(NAME) $(OBJ)
+$(NAME):
+	gcc -c $(FLAGS) $(SRC) $(LIBFT) $(HEAD)
+	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME)
 
-%.o: %.c
-	gcc $(FLAGS) -I $(HEAD) -o $@ -c $<
-
 clean:
-	$(MAKE) clean -C $(LIBFT)
-	rm -rf $(OBJ)
+	rm -f $(OBJS)
 
 fclean: clean
-	$(MAKE) fclean -C $(LIBFT)
-	rm -rf $(NAME)
+	rm -f $(NAME)
 
 re: fclean all

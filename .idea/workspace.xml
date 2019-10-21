@@ -12,6 +12,223 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc2b5bba-4059-4f0d-a020-1f98edbff82f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ft_printf.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ft_printf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parser.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/65" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_atoi.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_bzero.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_intlen.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_isalnum.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_isalpha.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_isascii.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_isblank.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_isdigit.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_isprint.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_isspace.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_itoa.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_list_reverse.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_lstadd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_lstdel.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_lstdelone.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_lstiter.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_lstmap.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_lstnew.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_memalloc.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_memccpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_memchr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_memcmp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_memcpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_memdel.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_memmove.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_memset.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_putchar.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_putchar_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_putendl.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_putendl_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_putnbr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_putnbr_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_putstr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_putstr_fd.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strcat.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strchr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strclr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strcmp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strcpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strdel.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strdup.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strequ.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_striter.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_striteri.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strjoin.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strlcat.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strlen.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strmap.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strmapi.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strncat.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strncmp.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strncpy.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strnequ.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strnew.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strnlen.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strnstr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strrchr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strsplit.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strstr.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strsub.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_strtrim.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_tolower.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_toupper.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/it_is_my_printf.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/it_is_my_printf.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_atoi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_atoi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_bzero.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_bzero.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_intlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_intlen.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_isalnum.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_isalnum.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_isalpha.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_isalpha.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_isascii.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_isascii.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_isblank.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_isblank.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_isdigit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_isdigit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_isprint.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_isprint.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_isspace.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_isspace.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_itoa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_itoa.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_list_reverse.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_list_reverse.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_lstadd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_lstadd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_lstdel.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_lstdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_lstdelone.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_lstdelone.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_lstiter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_lstiter.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_lstmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_lstmap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_lstnew.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_lstnew.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memalloc.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memalloc.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memccpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memccpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memcmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memdel.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memmove.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memmove.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memset.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_memset.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putchar.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putchar.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putchar_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putchar_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putendl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putendl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putendl_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putendl_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putnbr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putnbr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putnbr_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putnbr_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putstr_fd.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_putstr_fd.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strcat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strclr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strclr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strcmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strcpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strcpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strdel.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strdel.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strdup.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strdup.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strequ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strequ.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_striter.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_striter.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_striteri.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_striteri.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strjoin.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strjoin.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strlcat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strlcat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strlen.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strmap.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strmap.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strmapi.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strmapi.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strncat.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strncat.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strncmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strncmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strncpy.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strncpy.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strnequ.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strnequ.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strnew.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strnew.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strnlen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strnlen.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strnstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strnstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strrchr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strrchr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strsplit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strsplit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strstr.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strstr.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strsub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strsub.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strtrim.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_strtrim.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_tolower.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_tolower.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_toupper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ft_toupper.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/libftprintf.a" beforeDir="false" afterPath="$PROJECT_DIR$/libftprintf.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/main.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pft/configurations/42fc/42fc.conf" beforeDir="false" afterPath="$PROJECT_DIR$/pft/configurations/42fc/42fc.conf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +256,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/pft" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SSmbGZ8RqtUr62ihvJVb4Y8wXC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -48,7 +265,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C/C++" />
+    <property name="settings.editor.selected.configurable" value="file.status.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -87,7 +304,8 @@
       <workItem from="1571565442408" duration="7877000" />
       <workItem from="1571587293742" duration="6902000" />
       <workItem from="1571642534872" duration="11762000" />
-      <workItem from="1571659792222" duration="7133000" />
+      <workItem from="1571659792222" duration="7355000" />
+      <workItem from="1571677631116" duration="7060000" />
     </task>
     <servers />
   </component>
@@ -112,7 +330,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.c</url>
-          <line>124</line>
+          <line>7</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
