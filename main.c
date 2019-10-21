@@ -2,9 +2,12 @@
 
 int     main(void)
 {
-    char str[] = "Hello world!";
+    //char str[] = "Hello world!";
 
-    printf("%d\n", printf("hello, -%6.3s.", NULL));
+    printf("p<-%-2.c->\n", '2');
+    ft_printf("f<-%-2.1c->\n", '2');
+    //ft_printf("%c", 'd');
+    /*printf("%d\n", printf("hello, -%6.3s.", NULL));
     printf("%d\n", ft_printf("hello, -%6.3s.", NULL));
 
     printf("%20.5s->\n", str);
@@ -38,6 +41,6 @@ int     main(void)
     printf("%s %s\n", "3", "qw");
 
     ft_printf("%6.5s", "Hello world");
-    printf("%6.5s", "Hello world");
+    printf("%6.5s", "Hello world");*/
     return 0;
 }

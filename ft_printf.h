@@ -29,5 +29,6 @@ int     ft_printf(const char *format, ...);
 void    parser(t_box *box, t_tab *tab);
 void    parser_form(t_box *box, t_tab *tab);
 void    output_s(t_box *box, t_tab *tab);
+void    output_c(t_box *box, t_tab *tab);
 
 #endif

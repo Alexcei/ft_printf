@@ -28,22 +28,19 @@ void    parser_form(t_box *box, t_tab *tab)
     {
         output_s(box, tab);
     }
+    if (box->format[box->i] == 'c' && ++box->i)
+    {
+        output_c(box, tab);
+    }
 }
 
 void    parser(t_box *box, t_tab *tab)
 {
-    char    *s;
-
     while (box->format[box->i])
     {
         if (box->format[box->i] == '%' && ++box->i && box->format[box->i] != '%')
         {
-            if ((s = va_arg(box->av, char*)))
-                box->str = ft_strdup(s);
-            else
-                box->str = ft_strdup("(null)");
             ft_bzero(tab, sizeof(t_tab));
-            tab->len = ft_strlen(box->str);
             parser_form(box, tab);
         }
         else
