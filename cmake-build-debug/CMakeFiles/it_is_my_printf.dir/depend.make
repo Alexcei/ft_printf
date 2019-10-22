@@ -185,6 +185,10 @@ CMakeFiles/it_is_my_printf.dir/main.c.o: ../ft_printf.h
 CMakeFiles/it_is_my_printf.dir/main.c.o: ../libft/libft.h
 CMakeFiles/it_is_my_printf.dir/main.c.o: ../main.c
 
+CMakeFiles/it_is_my_printf.dir/output_c_s.c.o: ../ft_printf.h
+CMakeFiles/it_is_my_printf.dir/output_c_s.c.o: ../libft/libft.h
+CMakeFiles/it_is_my_printf.dir/output_c_s.c.o: ../output_c_s.c
+
 CMakeFiles/it_is_my_printf.dir/parser.c.o: ../ft_printf.h
 CMakeFiles/it_is_my_printf.dir/parser.c.o: ../libft/libft.h
 CMakeFiles/it_is_my_printf.dir/parser.c.o: ../parser.c

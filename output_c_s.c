@@ -9,7 +9,7 @@ void    output_s(t_box *box, t_tab *tab)
     else
         box->str = ft_strdup("(null)");
     tab->len = ft_strlen(box->str);
-    if (tab->flag_prec && tab->len > tab->precision)
+    if (tab->dot_prec && tab->len > tab->precision)
     {
         box->str[tab->precision] = '\0';
         tab->len = tab->precision;

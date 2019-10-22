@@ -10,6 +10,10 @@ void    parser_type(t_box *box, t_tab *tab)
     {
         output_c(box, tab);
     }
+    else if ((box->format[box->i] == 'i' || box->format[box->i] == 'd') && ++box->i)
+    {
+        output_d(box, tab);
+    }
     else if (box->format[box->i] == 'p' && ++box->i)
     {
         output_p(box, tab);
@@ -24,8 +28,14 @@ void    parser_form(t_box *box, t_tab *tab)
 {
     if (box->format[box->i] == '-' && ++box->i)
         tab->flag_min = 1;
+    if (box->format[box->i] == '+' && ++box->i)
+        tab->flag_plus = 1;
+    if (box->format[box->i] == ' ' && ++box->i)
+        tab->flag_space = 1;
     if (box->format[box->i] == '0' && ++box->i)
         tab->flag_null = 1;
+    if (box->format[box->i] == '#' && ++box->i)
+        tab->flag_grid = 1;
     if (ft_isdigit(box->format[box->i]))
     {
         while (ft_isdigit(box->format[box->i]))
@@ -37,7 +47,7 @@ void    parser_form(t_box *box, t_tab *tab)
     }
     if (box->format[box->i] == '.' && ++box->i)
     {
-        tab->flag_prec = 1;
+        tab->dot_prec = 1;
         if (ft_isdigit(box->format[box->i]))
         {
             while (ft_isdigit(box->format[box->i]))

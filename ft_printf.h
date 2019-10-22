@@ -20,10 +20,14 @@ typedef struct  s_tab
     int         len;
     int         width;
     int         dif;
+    int         sign;
     int         precision;
-    int         flag_prec;
+    int         dot_prec;
     int         flag_min;
+    int         flag_plus;
+    int         flag_space;
     int         flag_null;
+    int         flag_grid;
 }               t_tab;
 
 # define PF_FLAG "-+ 0#"
@@ -36,5 +40,6 @@ void    output_s(t_box *box, t_tab *tab);
 void    output_c(t_box *box, t_tab *tab);
 void    output_p(t_box *box, t_tab *tab);
 void    output_persent(t_box *box, t_tab *tab);
+void    output_d(t_box *box, t_tab *tab);
 
 #endif

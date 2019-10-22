@@ -9,15 +9,70 @@ static void     print_hex(unsigned long n)
     write(1, &n, 1);
 }
 
+void    output_d(t_box *box, t_tab *tab)
+{
+    int     n;
+    int     n_copy;
+    int     gap;
+
+    gap = 0;
+    n  = (int)va_arg(box->av, int);
+    n_copy = n;
+    while (n_copy /= 10)
+        tab->len++;
+    tab->len += 1;
+    if (tab->precision > tab->len)
+    {
+        gap = tab->precision - tab->len;
+        tab->len = tab->precision;
+    }
+    if (n < 0 || tab->flag_plus)
+    {
+        tab->len++;
+        if (tab->flag_plus)
+
+        tab->sign = 1;
+        n *= -1;
+    }
+    if (tab->width > tab->len)
+        tab->dif = tab->width - tab->len;
+    box->res += tab->len + tab->dif;
+    if (tab->flag_min)
+    {
+        if (tab->sign)
+            ft_putchar('-');
+        while (gap--)
+            ft_putchar('0');
+        ft_putnbr(n);
+        while (tab->dif--)
+            ft_putchar(' ');
+    }
+    else
+    {
+        while (tab->dif--)
+        {
+            if (tab->flag_null && !tab->dot_prec)
+                ft_putchar('0');
+            else
+                ft_putchar(' ');
+        }
+        if (tab->sign)
+            ft_putchar('-');
+        while (gap--)
+            ft_putchar('0');
+        ft_putnbr(n);
+    }
+}
+
 void    output_p(t_box *box, t_tab *tab)
 {
-    unsigned long    s;
-    unsigned long    s_copy;
+    unsigned long    p;
+    unsigned long    p_copy;
 
-    s = (unsigned long)va_arg(box->av, unsigned long);
-    s_copy = s;
-    tab->len +=3;
-    while (s_copy /= 16)
+    p = (unsigned long)va_arg(box->av, unsigned long);
+    p_copy = p;
+    tab->len += 3;
+    while (p_copy /= 16)
         tab->len++;
     if (tab->width > tab->len)
         tab->dif = tab->width - tab->len;
@@ -25,7 +80,7 @@ void    output_p(t_box *box, t_tab *tab)
     if (tab->flag_min)
     {
         write(1, "0x", 2);
-        print_hex(s);
+        print_hex(p);
         while (tab->dif--)
             ft_putchar(' ');
     }
@@ -34,7 +89,7 @@ void    output_p(t_box *box, t_tab *tab)
         while (tab->dif--)
             ft_putchar(' ');
         write(1, "0x", 2);
-        print_hex(s);
+        print_hex(p);
     }
 }
 
