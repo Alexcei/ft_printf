@@ -2,10 +2,21 @@
 
 int     main(void)
 {
-    int i = 1;
+    int i = 0;
 
-    printf("%d\n", printf("% 0+8.5d\n", 0));
-    printf("%d\n", ft_printf("% 0+8.5d\n", 0));
+    printf("%d\n", printf("<% -7i>\n", 33));
+    printf("%d\n", ft_printf("<% -7i>\n", 33));
+
+    printf("%d\n", printf("<% d>\n", i));
+    printf("%d\n", ft_printf("<% d>\n", i));
+
+    printf("%d\n", printf("<%3.1d>\n", 13));
+    printf("%d\n", ft_printf("<%3.1d>\n", 13));
+
+    printf("%d\n", ft_printf("<% d>\n", 3));
+
+    printf("%d\n", printf("<%0+8.2d>\n", i));
+    printf("%d\n", ft_printf("<%0+8.2d>\n", i));
 
     printf("%d\n", printf("<%20.10d>\n", i));
     ft_printf("%d\n", printf("<%20.10d>\n", i));

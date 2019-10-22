@@ -43,6 +43,25 @@ void    parser_flag(t_box *box, t_tab *tab)
         parser_flag(box, tab);
 }
 
+void    parser_modifier(t_box *box, t_tab *tab)
+{
+    int     i;
+
+    i = box->i;
+    if (box->format[box->i] == '-' && ++box->i)
+        tab->flag_min = 1;
+    if (box->format[box->i] == '+' && ++box->i)
+        tab->flag_plus = 1;
+    if (box->format[box->i] == ' ' && ++box->i)
+        tab->flag_space = 1;
+    if (box->format[box->i] == '0' && ++box->i)
+        tab->flag_null = 1;
+    if (box->format[box->i] == '#' && ++box->i)
+        tab->flag_grid = 1;
+    if (i != box->i)
+        parser_flag(box, tab);
+}
+
 void    parser_form(t_box *box, t_tab *tab)
 {
     parser_flag(box, tab);
@@ -68,6 +87,7 @@ void    parser_form(t_box *box, t_tab *tab)
             }
         }
     }
+    parser_modifier(box, tab);
     parser_type(box, tab);
 }
 

@@ -24,6 +24,8 @@ void    output_d(t_box *box, t_tab *tab)
     if (tab->precision > tab->len)
     {
         gap = tab->precision - tab->len;
+        if (n == 0)
+            gap++;
         tab->len = tab->precision;
     }
     if (n < 0 || tab->flag_plus)
@@ -39,6 +41,11 @@ void    output_d(t_box *box, t_tab *tab)
     }
     if (tab->width > tab->len)
         tab->dif = tab->width - tab->len;
+    if (((tab->width <= tab->len && tab->sign == 0) || tab->flag_min) && tab->flag_space)
+    {
+        ft_putchar(' ');
+        box->res++;
+    }
     box->res += tab->len + tab->dif;
     if (tab->flag_min)
     {
@@ -48,9 +55,7 @@ void    output_d(t_box *box, t_tab *tab)
             ft_putchar('+');
         while (gap--)
             ft_putchar('0');
-        if (!n && tab->dot_prec)
-            box->res--;
-        else
+        if (!(!n && tab->dot_prec))
             ft_putnbr(n);
         while (tab->dif--)
             ft_putchar(' ');
@@ -70,9 +75,7 @@ void    output_d(t_box *box, t_tab *tab)
             ft_putchar('+');
         while (gap--)
             ft_putchar('0');
-        if (!n && tab->dot_prec)
-            box->res--;
-        else
+        if (!(!n && tab->dot_prec))
             ft_putnbr(n);
     }
 }
