@@ -24,8 +24,11 @@ void    parser_type(t_box *box, t_tab *tab)
     }
 }
 
-void    parser_form(t_box *box, t_tab *tab)
+void    parser_flag(t_box *box, t_tab *tab)
 {
+    int     i;
+
+    i = box->i;
     if (box->format[box->i] == '-' && ++box->i)
         tab->flag_min = 1;
     if (box->format[box->i] == '+' && ++box->i)
@@ -36,6 +39,13 @@ void    parser_form(t_box *box, t_tab *tab)
         tab->flag_null = 1;
     if (box->format[box->i] == '#' && ++box->i)
         tab->flag_grid = 1;
+    if (i != box->i)
+        parser_flag(box, tab);
+}
+
+void    parser_form(t_box *box, t_tab *tab)
+{
+    parser_flag(box, tab);
     if (ft_isdigit(box->format[box->i]))
     {
         while (ft_isdigit(box->format[box->i]))

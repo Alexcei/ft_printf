@@ -2,10 +2,10 @@
 
 int     main(void)
 {
-    int i = -1;
+    int i = 1;
 
-    printf("<%+5.2i>\n", i);
-    ft_printf("<%+5.2i>\n", i);
+    printf("%d\n", printf("% 0+8.5d\n", 0));
+    printf("%d\n", ft_printf("% 0+8.5d\n", 0));
 
     printf("%d\n", printf("<%20.10d>\n", i));
     ft_printf("%d\n", printf("<%20.10d>\n", i));
