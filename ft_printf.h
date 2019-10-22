@@ -22,13 +22,19 @@ typedef struct  s_tab
     int         dif;
     int         precision;
     int         flag_prec;
-    int         flag;
+    int         flag_min;
+    int         flag_null;
 }               t_tab;
+
+# define PF_FLAG "-+ 0#"
+# define PF_TYPE "scp%"
 
 int     ft_printf(const char *format, ...);
 void    parser(t_box *box, t_tab *tab);
 void    parser_form(t_box *box, t_tab *tab);
 void    output_s(t_box *box, t_tab *tab);
 void    output_c(t_box *box, t_tab *tab);
+void    output_p(t_box *box, t_tab *tab);
+void    output_persent(t_box *box, t_tab *tab);
 
 #endif

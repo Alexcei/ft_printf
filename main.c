@@ -2,12 +2,22 @@
 
 int     main(void)
 {
-    //char str[] = "Hello world!";
+    /*char str[] = "Hello world!";
+    int i = 1;
+    int *p = &i;
 
+    printf("<-%%->\n");
+    ft_printf("<-%%->\n");
+    printf("%c%c\n", '1', '2');
+    ft_printf("%c%c\n", '1', '2');
+    printf(("<-%5%->\n"));
+    ft_printf(("<-%5%->\n"));
+    ft_printf("%%\n");
+    printf("%d\n", printf("<-%-15.p->\n", p));
+    printf("%d\n", ft_printf("<-%-15.p->\n", p));
     printf("p<-%-2.c->\n", '2');
     ft_printf("f<-%-2.1c->\n", '2');
-    //ft_printf("%c", 'd');
-    /*printf("%d\n", printf("hello, -%6.3s.", NULL));
+    printf("%d\n", printf("hello, -%6.3s.", NULL));
     printf("%d\n", ft_printf("hello, -%6.3s.", NULL));
 
     printf("%20.5s->\n", str);

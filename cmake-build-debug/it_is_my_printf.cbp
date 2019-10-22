@@ -281,6 +281,9 @@
 		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/main.c">
 			<Option target="it_is_my_printf"/>
 		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/output_c_s.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/parser.c">
 			<Option target="it_is_my_printf"/>
 		</Unit>

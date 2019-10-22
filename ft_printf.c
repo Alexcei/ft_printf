@@ -1,57 +1,65 @@
 #include "ft_printf.h"
 
-void    output_s(t_box *box, t_tab *tab)
+static void     print_hex(unsigned long n)
 {
-    char    *s;
-
-    if ((s = va_arg(box->av, char*)))
-        box->str = ft_strdup(s);
-    else
-        box->str = ft_strdup("(null)");
-    tab->len = ft_strlen(box->str);
-    if (tab->flag_prec && tab->len > tab->precision)
-    {
-        box->str[tab->precision] = '\0';
-        tab->len = tab->precision;
-    }
-    if (tab->width > tab->len)
-        tab->dif = tab->width - tab->len;
-    box->res += (tab->len + tab->dif);
-    if (tab->flag)
-    {
-        ft_putstr(box->str);
-        while (tab->dif--)
-            ft_putchar(' ');
-    }
-    else
-    {
-        while (tab->dif--)
-            ft_putchar(' ');
-        ft_putstr(box->str);
-    }
-    free(box->str);
+    if (n >= 16)
+        print_hex(n / 16);
+    n = n % 16;
+    n += n < 10 ? '0' : 'a' - 10;
+    write(1, &n, 1);
 }
 
-void    output_c(t_box *box, t_tab *tab)
+void    output_p(t_box *box, t_tab *tab)
 {
-    char    s;
+    unsigned long    s;
+    unsigned long    s_copy;
 
-    s = (char)va_arg(box->av, char*);
+    s = (unsigned long)va_arg(box->av, unsigned long);
+    s_copy = s;
+    tab->len +=3;
+    while (s_copy /= 16)
+        tab->len++;
+    if (tab->width > tab->len)
+        tab->dif = tab->width - tab->len;
+    box->res += tab->len + tab->dif;
+    if (tab->flag_min)
+    {
+        write(1, "0x", 2);
+        print_hex(s);
+        while (tab->dif--)
+            ft_putchar(' ');
+    }
+    else
+    {
+        while (tab->dif--)
+            ft_putchar(' ');
+        write(1, "0x", 2);
+        print_hex(s);
+    }
+}
+
+void    output_persent(t_box *box, t_tab *tab)
+{
     tab->len = 1;
     if (tab->width > 1)
         tab->dif = tab->width - 1;
-    box->res += (1 + tab->dif);
-    if (tab->flag)
+    box->res += 1 + tab->dif;
+    if (tab->flag_min)
     {
-        ft_putchar(s);
+        ft_putchar('%');
         while (tab->dif--)
             ft_putchar(' ');
     }
     else
     {
         while (tab->dif--)
-            ft_putchar(' ');
-        ft_putchar(s);
+        {
+            if (tab->flag_null)
+                ft_putchar('0');
+            else
+                ft_putchar(' ');
+        }
+        ft_putchar('%');
     }
 }
 
