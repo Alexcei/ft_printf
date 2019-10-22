@@ -48,16 +48,12 @@ void    parser_modifier(t_box *box, t_tab *tab)
     int     i;
 
     i = box->i;
-    if (box->format[box->i] == '-' && ++box->i)
-        tab->flag_min = 1;
-    if (box->format[box->i] == '+' && ++box->i)
-        tab->flag_plus = 1;
-    if (box->format[box->i] == ' ' && ++box->i)
-        tab->flag_space = 1;
-    if (box->format[box->i] == '0' && ++box->i)
-        tab->flag_null = 1;
-    if (box->format[box->i] == '#' && ++box->i)
-        tab->flag_grid = 1;
+    if (box->format[box->i] == 'h' && ++box->i)
+        tab->modifier_h += 1;
+    if (box->format[box->i] == 'l' && ++box->i)
+        tab->modifier_l += 1;
+    if (box->format[box->i] == 'L' && ++box->i)
+        tab->modifier_L = 1;
     if (i != box->i)
         parser_flag(box, tab);
 }

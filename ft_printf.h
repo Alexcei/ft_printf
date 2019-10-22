@@ -28,6 +28,9 @@ typedef struct  s_tab
     int         flag_space;
     int         flag_null;
     int         flag_grid;
+    int         modifier_h;
+    int         modifier_l;
+    int         modifier_L;
 }               t_tab;
 
 # define PF_FLAG "-+ 0#"
