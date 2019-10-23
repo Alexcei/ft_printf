@@ -7,7 +7,7 @@ int     main(void)
 	unsigned long iq = 100000000000000lu;
 	unsigned long *iiiq = &iq;
 
-	printf("%d\n", printf("<%5p>\n", 15));
+	printf("%d\n", printf("<%5p>\n", 0));
 	printf("%d\n", ft_printf("<%5p>\n", 15));
 	printf("\n");
 

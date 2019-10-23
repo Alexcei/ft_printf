@@ -14,7 +14,7 @@ void    output_p(t_box *box, t_tab *tab)
 	unsigned long    p;
 
 	p = (unsigned long)va_arg(box->av, unsigned long);
-	tab->len = ft_int_len((long long int)p, 16) + 2;
+	tab->len = ft_figure_len((long long int)p, 16) + 2;
 	if (tab->width > tab->len)
 		tab->width -= tab->len;
 	else
