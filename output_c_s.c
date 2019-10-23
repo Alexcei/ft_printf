@@ -15,42 +15,30 @@ void    output_s(t_box *box, t_tab *tab)
         tab->len = tab->precision;
     }
     if (tab->width > tab->len)
-        tab->dif = tab->width - tab->len;
-    box->res += tab->len + tab->dif;
-    if (tab->flag_min)
-    {
-        ft_putstr(box->str);
-        while (tab->dif--)
-            ft_putchar(' ');
-    }
+        tab->width -= tab->len;
     else
-    {
-        while (tab->dif--)
-            ft_putchar(' ');
+    	tab->width = 0;
+    box->res += tab->len;
+    if (tab->flag_min)
         ft_putstr(box->str);
-    }
+    while (tab->width--)
+		ft_putchar_count(box, ' ');
+	if (!tab->flag_min)
+		ft_putstr(box->str);
     free(box->str);
 }
 
 void    output_c(t_box *box, t_tab *tab)
 {
-    char    s;
+	char    s;
 
-    s = (char)va_arg(box->av, char*);
-    tab->len = 1;
-    if (tab->width > 1)
-        tab->dif = tab->width - 1;
-    box->res += 1 + tab->dif;
-    if (tab->flag_min)
-    {
-        ft_putchar(s);
-        while (tab->dif--)
-            ft_putchar(' ');
-    }
-    else
-    {
-        while (tab->dif--)
-            ft_putchar(' ');
-        ft_putchar(s);
-    }
+	s = (char)va_arg(box->av, char*);
+	if (tab->width > 0)
+		tab->width--;
+	if (tab->flag_min)
+		ft_putchar_count(box, s);
+	while (tab->width--)
+		ft_putchar_count(box, ' ');
+	if (!tab->flag_min)
+		ft_putchar_count(box, s);
 }

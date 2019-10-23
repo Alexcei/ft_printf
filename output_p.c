@@ -12,27 +12,23 @@ static void     print_hex(unsigned long n)
 void    output_p(t_box *box, t_tab *tab)
 {
 	unsigned long    p;
-	unsigned long    p_copy;
 
 	p = (unsigned long)va_arg(box->av, unsigned long);
-	p_copy = p;
-	tab->len += 3;
-	while (p_copy /= 16)
-		tab->len++;
+	tab->len = ft_int_len((long long int)p, 16) + 2;
 	if (tab->width > tab->len)
-		tab->dif = tab->width - tab->len;
-	box->res += tab->len + tab->dif;
+		tab->width -= tab->len;
+	else
+		tab->width = 0;
+	box->res += tab->len;
 	if (tab->flag_min)
 	{
 		write(1, "0x", 2);
 		print_hex(p);
-		while (tab->dif--)
-			ft_putchar(' ');
 	}
-	else
+	while (tab->width--)
+		ft_putchar_count(box, ' ');
+	if (!tab->flag_min)
 	{
-		while (tab->dif--)
-			ft_putchar(' ');
 		write(1, "0x", 2);
 		print_hex(p);
 	}

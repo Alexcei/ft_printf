@@ -3,9 +3,12 @@
 int     main(void)
 {
 	unsigned long i = 100000000000000lu;
+	unsigned long *iii = &i;
+	unsigned long iq = 100000000000000lu;
+	unsigned long *iiiq = &iq;
 
-	printf("%d\n", printf("<%50lu>\n", i));
-	printf("%d\n", ft_printf("<%50lu>\n", i));
+	printf("%d\n", printf("<%5p>\n", 15));
+	printf("%d\n", ft_printf("<%5p>\n", 15));
 	printf("\n");
 
 /*

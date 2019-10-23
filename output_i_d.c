@@ -49,7 +49,7 @@ void    output_d(t_box *box, t_tab *tab)
 		n  = (int)va_arg(box->av, int);
 	if (n < 0 && ++tab->sign)
 		n *= -1;                      // not like that
-	if ((tab->len = ft_int_len(n)))
+	if ((tab->len = ft_int_len(n, 10)))
 		box->res += tab->len;
 	if (n == 0 && tab->dot_prec)
 	{

@@ -24,10 +24,10 @@ void		ft_put_nbr(long long int i)
 		ft_putchar(i + '0');
 }
 
-size_t	ft_int_len(long long int n)
+int			ft_int_len(long long int n, int m)
 {
-	if (n >= 10)
-		return (ft_int_len(n / 10) + 1);
+	if (n >= m)
+		return (ft_int_len(n / m, m) + 1);
 	return (1);
 }
 

@@ -30,7 +30,6 @@ typedef struct  s_tab
     int         modifier_h;
     int         modifier_l;
     int         modifier_L;
-
     int dif;
 }               t_tab;
 
@@ -45,7 +44,7 @@ void    output_d(t_box *box, t_tab *tab);
 void    output_u(t_box *box, t_tab *tab);
 
 void	ft_put_nbr(long long int i);
-size_t	ft_int_len(long long int n);
+int		ft_int_len(long long int n, int m);
 void	ft_putchar_count(t_box *box, char c);
 
 #endif
