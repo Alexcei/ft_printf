@@ -45,5 +45,6 @@ void    output_c(t_box *box, t_tab *tab);
 void    output_p(t_box *box, t_tab *tab);
 void    output_persent(t_box *box, t_tab *tab);
 void    output_d(t_box *box, t_tab *tab);
+void    output_u(t_box *box, t_tab *tab);
 
 #endif

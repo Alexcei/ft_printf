@@ -15,6 +15,7 @@ NAME = libftprintf.a
 SRC = ft_printf.c \
 	  parser.c \
 	  output_c_s.c \
+	  output_u.c \
 
 OBJ = $(SRC:.c=.o)
 

@@ -2,8 +2,13 @@
 
 int     main(void)
 {
-    int i = 0;
+	unsigned long i = 100000000000000lu;
 
+	printf("%d\n", printf("<%50lu>\n", i));
+	printf("%d\n", ft_printf("<%50lu>\n", i));
+	printf("\n");
+
+/*
 	printf("%d\n", printf("<%05i>\n", i));
 	printf("%d\n", ft_printf("<%05i>\n", i));
 	printf("\n");
@@ -36,7 +41,7 @@ int     main(void)
     printf("\n");
     printf("%d\n", printf("<%-20.10d>\n", i));
     ft_printf("%d\n", printf("<%-20.10d>\n", i));
-
+*/
     /*char str[] = "Hello world!";
     int i = 1;
     int *p = &i;

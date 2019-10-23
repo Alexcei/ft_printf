@@ -65,6 +65,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/it_is_my_printf.dir/ft_printf.c.o"
   "CMakeFiles/it_is_my_printf.dir/main.c.o"
   "CMakeFiles/it_is_my_printf.dir/output_c_s.c.o"
+  "CMakeFiles/it_is_my_printf.dir/output_u.c.o"
   "CMakeFiles/it_is_my_printf.dir/parser.c.o"
   "it_is_my_printf.pdb"
   "it_is_my_printf"
