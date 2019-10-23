@@ -34,9 +34,6 @@ typedef struct  s_tab
     int dif;
 }               t_tab;
 
-# define PF_FLAG "-+ 0#"
-# define PF_TYPE "scp%"
-
 int     ft_printf(const char *format, ...);
 void    parser(t_box *box, t_tab *tab);
 void    parser_form(t_box *box, t_tab *tab);
@@ -46,5 +43,9 @@ void    output_p(t_box *box, t_tab *tab);
 void    output_persent(t_box *box, t_tab *tab);
 void    output_d(t_box *box, t_tab *tab);
 void    output_u(t_box *box, t_tab *tab);
+
+void	ft_put_nbr(long long int i);
+size_t	ft_int_len(long long int n);
+void	ft_putchar_count(t_box *box, char c);
 
 #endif

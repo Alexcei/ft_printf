@@ -3,29 +3,17 @@
 void    parser_type(t_box *box, t_tab *tab)
 {
 	if (box->format[box->i] == 's' && ++box->i)
-	{
 		output_s(box, tab);
-	}
 	else if (box->format[box->i] == 'c' && ++box->i)
-	{
 		output_c(box, tab);
-	}
 	else if ((box->format[box->i] == 'i' || box->format[box->i] == 'd') && ++box->i)
-	{
 		output_d(box, tab);
-	}
 	else if (box->format[box->i] == 'u' && ++box->i)
-	{
 		output_u(box, tab);
-	}
 	else if (box->format[box->i] == 'p' && ++box->i)
-	{
 		output_p(box, tab);
-	}
 	else if (box->format[box->i] == '%' && ++box->i)
-	{
 		output_persent(box, tab);
-	}
 }
 
 void    parser_flag(t_box *box, t_tab *tab)

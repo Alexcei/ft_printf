@@ -1,29 +1,5 @@
 #include "ft_printf.h"
 
-static void		ft_putnbr_u(unsigned long int i)
-{
-	if (i >= 10)
-	{
-		ft_putnbr_u(i / 10);
-		ft_putchar(i % 10 + '0');
-	}
-	else
-		ft_putchar(i + '0');
-}
-
-size_t	ft_intlen_u(unsigned long int n)
-{
-	if (n >= 10)
-		return (ft_intlen_u(n / 10) + 1);
-	return (1);
-}
-
-static void		ft_putchar_count(t_box *box, char c)
-{
-	ft_putchar(c);
-	box->res++;
-}
-
 static void    put_dif(t_box *box, t_tab *tab)
 {
 	if (tab->flag_null && !tab->dot_prec)
@@ -53,7 +29,7 @@ void    output_u(t_box *box, t_tab *tab)
 		n  = (unsigned short)va_arg(box->av, unsigned int);
 	else
 		n  = (unsigned int)va_arg(box->av, unsigned int);
-	if ((tab->len = ft_intlen_u(n)))
+	if ((tab->len = ft_int_len(n)))
 		box->res += tab->len;
 	if (n == 0 && tab->dot_prec)
 	{
@@ -72,7 +48,7 @@ void    output_u(t_box *box, t_tab *tab)
 	}
 	put_dif(box, tab);
 	if (n || !tab->dot_prec)
-		ft_putnbr_u(n);
+		ft_put_nbr((long long int)n);
 	else
 		box->res--;
 	if (tab->flag_min)

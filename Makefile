@@ -6,7 +6,7 @@
 #    By: bpole <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/07 12:11:32 by bpole             #+#    #+#              #
-#    Updated: 2019/10/22 16:52:13 by bpole            ###   ########.fr        #
+#    Updated: 2019/10/23 19:01:45 by bpole            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,6 +16,9 @@ SRC = ft_printf.c \
 	  parser.c \
 	  output_c_s.c \
 	  output_u.c \
+	  output_i_d.c \
+	  output_p.c \
+	  output_persent.c \
 
 OBJ = $(SRC:.c=.o)
 

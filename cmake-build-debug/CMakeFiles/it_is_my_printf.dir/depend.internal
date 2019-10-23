@@ -189,6 +189,18 @@ CMakeFiles/it_is_my_printf.dir/output_c_s.c.o
  /Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
  /Users/bpole/CLionProjects/it_is_my_printf/libft/libft.h
  /Users/bpole/CLionProjects/it_is_my_printf/output_c_s.c
+CMakeFiles/it_is_my_printf.dir/output_i_d.c.o
+ /Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
+ /Users/bpole/CLionProjects/it_is_my_printf/libft/libft.h
+ /Users/bpole/CLionProjects/it_is_my_printf/output_i_d.c
+CMakeFiles/it_is_my_printf.dir/output_p.c.o
+ /Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
+ /Users/bpole/CLionProjects/it_is_my_printf/libft/libft.h
+ /Users/bpole/CLionProjects/it_is_my_printf/output_p.c
+CMakeFiles/it_is_my_printf.dir/output_persent.c.o
+ /Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
+ /Users/bpole/CLionProjects/it_is_my_printf/libft/libft.h
+ /Users/bpole/CLionProjects/it_is_my_printf/output_persent.c
 CMakeFiles/it_is_my_printf.dir/output_u.c.o
  /Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
  /Users/bpole/CLionProjects/it_is_my_printf/libft/libft.h

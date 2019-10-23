@@ -1905,6 +1905,87 @@ output_c_s.c.s:
 	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_c_s.c.s
 .PHONY : output_c_s.c.s
 
+output_i_d.o: output_i_d.c.o
+
+.PHONY : output_i_d.o
+
+# target to build an object file
+output_i_d.c.o:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_i_d.c.o
+.PHONY : output_i_d.c.o
+
+output_i_d.i: output_i_d.c.i
+
+.PHONY : output_i_d.i
+
+# target to preprocess a source file
+output_i_d.c.i:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_i_d.c.i
+.PHONY : output_i_d.c.i
+
+output_i_d.s: output_i_d.c.s
+
+.PHONY : output_i_d.s
+
+# target to generate assembly for a file
+output_i_d.c.s:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_i_d.c.s
+.PHONY : output_i_d.c.s
+
+output_p.o: output_p.c.o
+
+.PHONY : output_p.o
+
+# target to build an object file
+output_p.c.o:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_p.c.o
+.PHONY : output_p.c.o
+
+output_p.i: output_p.c.i
+
+.PHONY : output_p.i
+
+# target to preprocess a source file
+output_p.c.i:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_p.c.i
+.PHONY : output_p.c.i
+
+output_p.s: output_p.c.s
+
+.PHONY : output_p.s
+
+# target to generate assembly for a file
+output_p.c.s:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_p.c.s
+.PHONY : output_p.c.s
+
+output_persent.o: output_persent.c.o
+
+.PHONY : output_persent.o
+
+# target to build an object file
+output_persent.c.o:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_persent.c.o
+.PHONY : output_persent.c.o
+
+output_persent.i: output_persent.c.i
+
+.PHONY : output_persent.i
+
+# target to preprocess a source file
+output_persent.c.i:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_persent.c.i
+.PHONY : output_persent.c.i
+
+output_persent.s: output_persent.c.s
+
+.PHONY : output_persent.s
+
+# target to generate assembly for a file
+output_persent.c.s:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_persent.c.s
+.PHONY : output_persent.c.s
+
 output_u.o: output_u.c.o
 
 .PHONY : output_u.o
@@ -2166,6 +2247,15 @@ help:
 	@echo "... output_c_s.o"
 	@echo "... output_c_s.i"
 	@echo "... output_c_s.s"
+	@echo "... output_i_d.o"
+	@echo "... output_i_d.i"
+	@echo "... output_i_d.s"
+	@echo "... output_p.o"
+	@echo "... output_p.i"
+	@echo "... output_p.s"
+	@echo "... output_persent.o"
+	@echo "... output_persent.i"
+	@echo "... output_persent.s"
 	@echo "... output_u.o"
 	@echo "... output_u.i"
 	@echo "... output_u.s"
