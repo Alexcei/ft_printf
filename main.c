@@ -9,7 +9,7 @@ int     main(void)
 
 	printf("%d\n", printf("<%5p>\n", 0));
 	printf("%d\n", ft_printf("<%5p>\n", 15));
-	printf("\n");
+	printf("\a\a\a\a\a\a\a\a");
 
 /*
 	printf("%d\n", printf("<%05i>\n", i));

@@ -42,7 +42,7 @@ void    output_persent(t_box *box, t_tab *tab);
 void    output_d(t_box *box, t_tab *tab);
 void    output_u(t_box *box, t_tab *tab);
 
-void	ft_put_nbr(long long int i);
+void    ft_figure_put(long long int n, int m);
 int		ft_figure_len(long long int n, int m);
 void	ft_putchar_count(t_box *box, char c);
 

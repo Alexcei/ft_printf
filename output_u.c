@@ -48,7 +48,7 @@ void    output_u(t_box *box, t_tab *tab)
 	}
 	put_dif(box, tab);
 	if (n || !tab->dot_prec)
-		ft_put_nbr((long long int)n);
+		ft_figure_put((long long int)n, 10);
 	else
 		box->res--;
 	if (tab->flag_min)

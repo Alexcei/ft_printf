@@ -13,15 +13,13 @@ int     ft_printf(const char *format, ...)
     return (box.res);
 }
 
-void		ft_put_nbr(long long int i)
+void     ft_figure_put(long long int n, int m)
 {
-	if (i >= 10)
-	{
-		ft_put_nbr(i / 10);
-		ft_putchar(i % 10 + '0');
-	}
-	else
-		ft_putchar(i + '0');
+	if (n >= m)
+		ft_figure_put(n / m, m);
+	n = n % m;
+	n += n < 10 ? '0' : 'a' - 10;
+	write(1, &n, 1);
 }
 
 int			ft_figure_len(long long int n, int m)

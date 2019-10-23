@@ -10,7 +10,7 @@ static void    put_sign(t_box *box, t_tab *tab)
 		ft_putchar_count(box, ' ');;
 }
 
-static void    put_dif(t_box *box, t_tab *tab)
+static void    put_secondary(t_box *box, t_tab *tab)
 {
 	if (tab->flag_space || tab->flag_plus || tab->sign)
 		tab->width--;
@@ -66,9 +66,9 @@ void    output_d(t_box *box, t_tab *tab)
 		tab->width -= tab->len;
 		tab->precision -= tab->len;
 	}
-	put_dif(box, tab);
+	put_secondary(box, tab);
 	if (n || !tab->dot_prec)
-		ft_put_nbr(n);
+		ft_figure_put(n, 10);
 	else
 		box->res--;
 	if (tab->flag_min)
