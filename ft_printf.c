@@ -9,95 +9,78 @@ static void     print_hex(unsigned long n)
     write(1, &n, 1);
 }
 
+static void		ft_putchar_count(t_box *box, char c)
+{
+	ft_putchar(c);
+	box->res++;
+}
+
+static void    put_sign(t_box *box, t_tab *tab)
+{
+    if (tab->flag_plus && !tab->sign)
+		ft_putchar_count(box, '+');
+    if (tab->sign)
+		ft_putchar_count(box, '-');
+    else if (tab->flag_space && !tab->flag_plus)
+		ft_putchar_count(box, ' ');;
+}
+
+static void    put_dif(t_box *box, t_tab *tab)
+{
+	if (tab->flag_space || tab->flag_plus || tab->sign)
+		tab->width--;
+	if (tab->flag_null && !tab->dot_prec)
+	{
+		put_sign(box, tab);
+		while (tab->width-- > 0)
+			ft_putchar_count(box, '0');
+	}
+	else
+    {
+		if (!tab->flag_min)
+		{
+			while (tab->width-- > 0)
+				ft_putchar_count(box, ' ');;
+		}
+        put_sign(box, tab);
+    }
+	while (tab->precision--  > 0)
+		ft_putchar_count(box, '0');;
+}
+
 void    output_d(t_box *box, t_tab *tab)
 {
     int     n;
-    int     n_copy;
-    int     gap;
 
-    gap = 0;
-    n  = (int)va_arg(box->av, int);
-    n_copy = n;
-    while (n_copy /= 10)
-        tab->len++;
-    tab->len += 1;
-    if (tab->precision >= tab->len)
+	n  = (int)va_arg(box->av, int);
+	if (n < 0 && ++tab->sign)
+		n *= -1;
+	if ((tab->len = ft_intlen(n)))
+		box->res += tab->len;
+	if (n == 0 && tab->dot_prec)
+	{
+		tab->precision++;
+		tab->width++;
+	}
+    if (tab->precision > tab->len)
     {
-        gap = tab->precision - tab->len;
-        if (n == 0)
-            gap++;
-        tab->len = tab->precision;
-    }
-    if (n < 0 || tab->flag_plus)
-    {
-        tab->len++;
-        if (n < 0)
-        {
-            tab->sign = -1;
-            n *= -1;
-        }
-        else
-            tab->sign = 1;
-    }
-    if (tab->width > tab->len && tab->flag_space && !tab->flag_plus && tab->sign != -1)   // - && tab->flag_min
-    {
-        ft_putchar(' ');
-        tab->flag_space = 0;
-        tab->len++;
-
-    }
-    if (tab->width > tab->len)
-        tab->dif = tab->width - tab->len;
-    if (tab->width <= tab->len && tab->sign == 0 && tab->flag_space)
-    {
-        ft_putchar(' ');
-        box->res++;
-    }
-    box->res += tab->len + tab->dif;
+		tab->width -= tab->precision;
+		tab->precision -= tab->len;
+	}
+    else
+	{
+    	tab->width -= tab->len;
+		tab->precision -= tab->len;
+	}
+    put_dif(box, tab);
+    if (n || !tab->dot_prec)
+        ft_putnbr(n);
+    else
+    	box->res--;
     if (tab->flag_min)
     {
-        if (tab->sign == -1)
-            ft_putchar('-');
-        if (tab->sign == 1)
-            ft_putchar('+');
-        while (gap--)
-            ft_putchar('0');
-        if (!(!n && tab->dot_prec))
-            ft_putnbr(n);
-        else
-            ft_putchar(' ');
-        while (tab->dif--)
-            ft_putchar(' ');
-    }
-    else
-    {
-        if (tab->flag_null && !tab->dot_prec)
-        {
-            if (tab->sign == -1)
-            {
-                ft_putchar('-');
-                tab->sign = 0;
-            }
-        }
-        if (!n && tab->dot_prec && tab->precision == 0 && tab->flag_plus)
-            tab->dif++;
-        while (tab->dif--)
-        {
-            if (tab->flag_null && !tab->dot_prec)
-                ft_putchar('0');
-            else
-                ft_putchar(' ');
-        }
-        if (tab->sign == -1)
-            ft_putchar('-');
-        if (tab->sign == 1)
-            ft_putchar('+');
-        while (gap--)
-            ft_putchar('0');
-        if (!(!n && tab->dot_prec))
-            ft_putnbr(n);
-        if (!n && tab->dot_prec && tab->precision == 0 && !tab->flag_plus)
-            ft_putchar(' ');
+        while (tab->width-- > 0)
+			ft_putchar_count(box, ' ');
     }
 }
 

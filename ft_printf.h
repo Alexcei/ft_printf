@@ -19,7 +19,6 @@ typedef struct  s_tab
 {
     int         len;
     int         width;
-    int         dif;
     int         sign;
     int         precision;
     int         dot_prec;
@@ -31,6 +30,8 @@ typedef struct  s_tab
     int         modifier_h;
     int         modifier_l;
     int         modifier_L;
+
+    int dif;
 }               t_tab;
 
 # define PF_FLAG "-+ 0#"

@@ -13,6 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc2b5bba-4059-4f0d-a020-1f98edbff82f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_printf.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/ft_printf.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/main.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/output_c_s.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/output_c_s.c.o" afterDir="false" />
@@ -20,11 +21,9 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/it_is_my_printf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/it_is_my_printf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ft_printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft_printf.o" beforeDir="false" afterPath="$PROJECT_DIR$/ft_printf.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libftprintf.a" beforeDir="false" afterPath="$PROJECT_DIR$/libftprintf.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser.c" beforeDir="false" afterPath="$PROJECT_DIR$/parser.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser.o" beforeDir="false" afterPath="$PROJECT_DIR$/parser.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pft/configurations/42fc/42fc.conf" beforeDir="false" afterPath="$PROJECT_DIR$/pft/configurations/42fc/42fc.conf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,6 +58,7 @@
   <component name="PropertiesComponent">
     <property name="ToolWindowMessages.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.overridden" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="file.status.colors" />
@@ -104,7 +104,8 @@
       <workItem from="1571677631116" duration="11844000" />
       <workItem from="1571729520818" duration="374000" />
       <workItem from="1571729959568" duration="18914000" />
-      <workItem from="1571760328769" duration="14857000" />
+      <workItem from="1571760328769" duration="14951000" />
+      <workItem from="1571814469686" duration="15626000" />
     </task>
     <servers />
   </component>
@@ -123,5 +124,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.c</url>
+          <line>6</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
