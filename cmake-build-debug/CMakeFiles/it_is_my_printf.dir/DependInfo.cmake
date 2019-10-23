@@ -71,6 +71,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bpole/CLionProjects/it_is_my_printf/main.c" "/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/main.c.o"
   "/Users/bpole/CLionProjects/it_is_my_printf/output_c_s.c" "/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/output_c_s.c.o"
   "/Users/bpole/CLionProjects/it_is_my_printf/output_i_d.c" "/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/output_i_d.c.o"
+  "/Users/bpole/CLionProjects/it_is_my_printf/output_o.c" "/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/output_o.c.o"
   "/Users/bpole/CLionProjects/it_is_my_printf/output_p.c" "/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/output_p.c.o"
   "/Users/bpole/CLionProjects/it_is_my_printf/output_persent.c" "/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/output_persent.c.o"
   "/Users/bpole/CLionProjects/it_is_my_printf/output_u.c" "/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/output_u.c.o"

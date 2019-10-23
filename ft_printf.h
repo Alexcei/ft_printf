@@ -41,6 +41,7 @@ void    output_p(t_box *box, t_tab *tab);
 void    output_persent(t_box *box, t_tab *tab);
 void    output_d(t_box *box, t_tab *tab);
 void    output_u(t_box *box, t_tab *tab);
+void    output_o(t_box *box, t_tab *tab);
 
 void    ft_figure_put(long long int n, int m);
 int		ft_figure_len(long long int n, int m);

@@ -2,14 +2,20 @@
 
 int     main(void)
 {
-	unsigned long i = 100000000000000lu;
-	unsigned long *iii = &i;
-	unsigned long iq = 100000000000000lu;
-	unsigned long *iiiq = &iq;
+	int i = 0;
 
-	printf("%d\n", printf("<%5p>\n", 0));
-	printf("%d\n", ft_printf("<%5p>\n", 15));
-	printf("\a\a\a\a\a\a\a\a");
+	printf("%d\n", printf("<%#o>\n", i));
+	printf("%d\n", ft_printf("<%#o>\n", i));
+	printf("\n");
+	printf("%d\n", printf("<%#.o>\n", i));
+	printf("%d\n", ft_printf("<%#.o>\n", i));
+	printf("\n");
+	printf("%d\n", printf("<%o>\n", i));
+	printf("%d\n", ft_printf("<%o>\n", i));
+	printf("\n");
+	printf("%d\n", printf("<%.o>\n", i));
+	printf("%d\n", ft_printf("<%.o>\n", i));
+	printf("\n");
 
 /*
 	printf("%d\n", printf("<%05i>\n", i));

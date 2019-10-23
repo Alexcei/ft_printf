@@ -1,22 +1,20 @@
 #include "ft_printf.h"
 
-static long long int	get_figure(t_box *box, t_tab *tab)
+static unsigned long long int	get_figure(t_box *box, t_tab *tab)
 {
-	long long int	n;
+	unsigned long long int	n;
 
 	if (tab->modifier_h == 1)
-		n  = (short)va_arg(box->av, int);
+		n  = (unsigned short)va_arg(box->av, unsigned int);
 	else if (tab->modifier_h > 1)
-		n  = (signed char)va_arg(box->av, int);
+		n  = (unsigned char)va_arg(box->av, unsigned int);
 	else if (tab->modifier_l == 1)
-		n  = (long)va_arg(box->av, long int);
+		n  = (unsigned long)va_arg(box->av, unsigned long int);
 	else if (tab->modifier_l > 1)
-		n  = (long long)va_arg(box->av, long long int);
+		n  = (unsigned long long)va_arg(box->av, unsigned long long int);
 	else
-		n  = (int)va_arg(box->av, int);
-	if (n < 0 && ++tab->sign)
-		n *= -1;                      // not like that
-	if ((tab->len = ft_figure_len(n, 10)))
+		n  = (unsigned int)va_arg(box->av, unsigned int);
+	if ((tab->len = ft_figure_len((long long int)n, 8)))
 		box->res += tab->len;
 	if (n == 0 && tab->dot_prec)
 	{
@@ -26,23 +24,14 @@ static long long int	get_figure(t_box *box, t_tab *tab)
 	return (n);
 }
 
-static void    put_sign(t_box *box, t_tab *tab)
-{
-	if (tab->flag_plus && !tab->sign)
-		ft_putchar_count(box, '+');
-	if (tab->sign)
-		ft_putchar_count(box, '-');
-	else if (tab->flag_space && !tab->flag_plus)
-		ft_putchar_count(box, ' ');
-}
-
 static void    put_secondary(t_box *box, t_tab *tab)
 {
-	if (tab->flag_space || tab->flag_plus || tab->sign)
+	if (tab->flag_grid && tab->precision < 1)
 		tab->width--;
 	if (tab->flag_null && !tab->dot_prec)
 	{
-		put_sign(box, tab);
+		if (tab->flag_grid && tab->precision < 1)
+			ft_putchar_count(box, '0');
 		while (tab->width-- > 0)
 			ft_putchar_count(box, '0');
 	}
@@ -53,15 +42,16 @@ static void    put_secondary(t_box *box, t_tab *tab)
 			while (tab->width-- > 0)
 				ft_putchar_count(box, ' ');
 		}
-		put_sign(box, tab);
+		if (tab->flag_grid && tab->precision < 1)
+			ft_putchar_count(box, '0');
 	}
 	while (tab->precision--  > 0)
 		ft_putchar_count(box, '0');;
 }
 
-void    output_d(t_box *box, t_tab *tab)
+void    output_o(t_box *box, t_tab *tab)
 {
-	long long int	n;
+	unsigned long long int	n;
 
 	n = get_figure(box, tab);
 	if (tab->precision > tab->len)
@@ -74,9 +64,11 @@ void    output_d(t_box *box, t_tab *tab)
 		tab->width -= tab->len;
 		tab->precision -= tab->len;
 	}
+	if (n == 0 && !tab->dot_prec)
+		tab->flag_grid = 0;
 	put_secondary(box, tab);
 	if (n || !tab->dot_prec)
-		ft_figure_put(n, 10);
+		ft_figure_put((long long int)n, 8);
 	else
 		box->res--;
 	if (tab->flag_min)

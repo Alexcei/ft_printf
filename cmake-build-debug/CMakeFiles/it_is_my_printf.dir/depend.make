@@ -193,6 +193,10 @@ CMakeFiles/it_is_my_printf.dir/output_i_d.c.o: ../ft_printf.h
 CMakeFiles/it_is_my_printf.dir/output_i_d.c.o: ../libft/libft.h
 CMakeFiles/it_is_my_printf.dir/output_i_d.c.o: ../output_i_d.c
 
+CMakeFiles/it_is_my_printf.dir/output_o.c.o: ../ft_printf.h
+CMakeFiles/it_is_my_printf.dir/output_o.c.o: ../libft/libft.h
+CMakeFiles/it_is_my_printf.dir/output_o.c.o: ../output_o.c
+
 CMakeFiles/it_is_my_printf.dir/output_p.c.o: ../ft_printf.h
 CMakeFiles/it_is_my_printf.dir/output_p.c.o: ../libft/libft.h
 CMakeFiles/it_is_my_printf.dir/output_p.c.o: ../output_p.c

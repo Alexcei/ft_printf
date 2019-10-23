@@ -1932,6 +1932,33 @@ output_i_d.c.s:
 	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_i_d.c.s
 .PHONY : output_i_d.c.s
 
+output_o.o: output_o.c.o
+
+.PHONY : output_o.o
+
+# target to build an object file
+output_o.c.o:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_o.c.o
+.PHONY : output_o.c.o
+
+output_o.i: output_o.c.i
+
+.PHONY : output_o.i
+
+# target to preprocess a source file
+output_o.c.i:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_o.c.i
+.PHONY : output_o.c.i
+
+output_o.s: output_o.c.s
+
+.PHONY : output_o.s
+
+# target to generate assembly for a file
+output_o.c.s:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_o.c.s
+.PHONY : output_o.c.s
+
 output_p.o: output_p.c.o
 
 .PHONY : output_p.o
@@ -2250,6 +2277,9 @@ help:
 	@echo "... output_i_d.o"
 	@echo "... output_i_d.i"
 	@echo "... output_i_d.s"
+	@echo "... output_o.o"
+	@echo "... output_o.i"
+	@echo "... output_o.s"
 	@echo "... output_p.o"
 	@echo "... output_p.i"
 	@echo "... output_p.s"

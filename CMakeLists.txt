@@ -8,4 +8,4 @@ file(GLOB LIBFT
 
 set(CMAKE_C_STANDARD 99)
 #add_definitions(-Wall -Werror -Wextra)
-add_executable(it_is_my_printf ${LIBFT} output_u.c output_i_d.c output_p.c output_persent.c)
+add_executable(it_is_my_printf ${LIBFT} output_u.c output_i_d.c output_p.c output_persent.c output_o.c)
