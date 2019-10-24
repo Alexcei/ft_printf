@@ -12,6 +12,10 @@ void    parser_type(t_box *box, t_tab *tab)
 		output_u(box, tab);
 	else if (box->format[box->i] == 'o' && ++box->i)
 		output_o(box, tab);
+	else if (box->format[box->i] == 'x' && ++box->i)
+		output_x(box, tab, 'x');
+	else if (box->format[box->i] == 'X' && ++box->i)
+		output_x(box, tab, 'X');
 	else if (box->format[box->i] == 'p' && ++box->i)
 		output_p(box, tab);
 	else if (box->format[box->i] == '%' && ++box->i)

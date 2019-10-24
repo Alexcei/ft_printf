@@ -13,12 +13,12 @@ int     ft_printf(const char *format, ...)
     return (box.res);
 }
 
-void     ft_figure_put(long long int n, int m)
+void     ft_figure_put(long long int n, int m, char a)
 {
 	if (n >= m)
-		ft_figure_put(n / m, m);
+		ft_figure_put(n / m, m, a);
 	n = n % m;
-	n += n < 10 ? '0' : 'a' - 10;
+	n += n < 10 ? '0' : a - 10;
 	write(1, &n, 1);
 }
 
@@ -29,8 +29,16 @@ int			ft_figure_len(long long int n, int m)
 	return (1);
 }
 
+void		ft_putstr_count(t_box *box, char *s)
+{
+	int		len;
+	len = ft_strlen(s);
+	write(1, &*s, len);
+	box->res += len;
+}
+
 void		ft_putchar_count(t_box *box, char c)
 {
-	ft_putchar(c);
+	write(1, &c, 1);;
 	box->res++;
 }

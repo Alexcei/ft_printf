@@ -2,19 +2,19 @@
 
 int     main(void)
 {
-	int i = 0;
+	int i = 15;
 
-	printf("%d\n", printf("<%#o>\n", i));
-	printf("%d\n", ft_printf("<%#o>\n", i));
+	printf("%d\n", printf("<%#X>\n", i));
+	printf("%d\n", ft_printf("<%#X>\n", i));
 	printf("\n");
-	printf("%d\n", printf("<%#.o>\n", i));
-	printf("%d\n", ft_printf("<%#.o>\n", i));
+	printf("%d\n", printf("<%#.o>\n", 0));
+	printf("%d\n", ft_printf("<%#.o>\n", 0));
 	printf("\n");
-	printf("%d\n", printf("<%o>\n", i));
-	printf("%d\n", ft_printf("<%o>\n", i));
+	printf("%d\n", printf("<%#5.x>\n", i));
+	printf("%d\n", ft_printf("<%#5.x>\n", i));
 	printf("\n");
-	printf("%d\n", printf("<%.o>\n", i));
-	printf("%d\n", ft_printf("<%.o>\n", i));
+	printf("%d\n", printf("<%#-5.x>\n", i));
+	printf("%d\n", ft_printf("<%#-5.x>\n", i));
 	printf("\n");
 
 /*

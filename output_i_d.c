@@ -76,7 +76,7 @@ void    output_d(t_box *box, t_tab *tab)
 	}
 	put_secondary(box, tab);
 	if (n || !tab->dot_prec)
-		ft_figure_put(n, 10);
+		ft_figure_put(n, 10, 97);
 	else
 		box->res--;
 	if (tab->flag_min)

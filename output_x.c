@@ -14,7 +14,7 @@ static unsigned long long int	get_figure(t_box *box, t_tab *tab)
 		n  = (unsigned long long)va_arg(box->av, unsigned long long int);
 	else
 		n  = (unsigned int)va_arg(box->av, unsigned int);
-	if ((tab->len = ft_figure_len((long long int)n, 8)))
+	if ((tab->len = ft_figure_len((long long int)n, 16)))
 		box->res += tab->len;
 	if (n == 0 && tab->dot_prec)
 	{
@@ -24,14 +24,21 @@ static unsigned long long int	get_figure(t_box *box, t_tab *tab)
 	return (n);
 }
 
-static void    put_secondary(t_box *box, t_tab *tab)
+static void    put_secondary(t_box *box, t_tab *tab, char x)
 {
-	if (tab->flag_grid && tab->precision < 1)
-		tab->width--;
-	if (tab->flag_null && !tab->dot_prec)
+	if (tab->dot_prec)
+		tab->flag_null = 0;
+	if (tab->flag_grid)
+		tab->width -= 2;
+	if (tab->flag_null)
 	{
-		if (tab->flag_grid && tab->precision < 1)
-			ft_putchar_count(box, '0');
+		if (tab->flag_grid)
+		{
+			if (x == 'x')
+				ft_putstr_count(box, "0x");
+			else
+				ft_putstr_count(box, "0X");
+		}
 		while (tab->width-- > 0)
 			ft_putchar_count(box, '0');
 	}
@@ -42,14 +49,19 @@ static void    put_secondary(t_box *box, t_tab *tab)
 			while (tab->width-- > 0)
 				ft_putchar_count(box, ' ');
 		}
-		if (tab->flag_grid && tab->precision < 1)
-			ft_putchar_count(box, '0');
+		if (tab->flag_grid)
+		{
+			if (x == 'x')
+				ft_putstr_count(box, "0x");
+			else
+				ft_putstr_count(box, "0X");
+		}
 	}
 	while (tab->precision--  > 0)
 		ft_putchar_count(box, '0');;
 }
 
-void    output_o(t_box *box, t_tab *tab)
+void    output_x(t_box *box, t_tab *tab, char x)
 {
 	unsigned long long int	n;
 
@@ -64,11 +76,11 @@ void    output_o(t_box *box, t_tab *tab)
 		tab->width -= tab->len;
 		tab->precision -= tab->len;
 	}
-	if (n == 0 && !tab->dot_prec)
+	if (n == 0)
 		tab->flag_grid = 0;
-	put_secondary(box, tab);
+	put_secondary(box, tab, x);
 	if (n || !tab->dot_prec)
-		ft_figure_put((long long int)n, 8, 97);
+		ft_figure_put((long long int)n, 16, (char)(x - 23));
 	else
 		box->res--;
 	if (tab->flag_min)

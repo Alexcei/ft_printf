@@ -22,7 +22,7 @@ stdlib.h
 unistd.h
 -
 
-/Users/bpole/CLionProjects/it_is_my_printf/output_o.c
+/Users/bpole/CLionProjects/it_is_my_printf/parser.c
 ft_printf.h
 /Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
 

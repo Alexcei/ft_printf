@@ -2040,6 +2040,33 @@ output_u.c.s:
 	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_u.c.s
 .PHONY : output_u.c.s
 
+output_x.o: output_x.c.o
+
+.PHONY : output_x.o
+
+# target to build an object file
+output_x.c.o:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_x.c.o
+.PHONY : output_x.c.o
+
+output_x.i: output_x.c.i
+
+.PHONY : output_x.i
+
+# target to preprocess a source file
+output_x.c.i:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_x.c.i
+.PHONY : output_x.c.i
+
+output_x.s: output_x.c.s
+
+.PHONY : output_x.s
+
+# target to generate assembly for a file
+output_x.c.s:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_x.c.s
+.PHONY : output_x.c.s
+
 parser.o: parser.c.o
 
 .PHONY : parser.o
@@ -2289,6 +2316,9 @@ help:
 	@echo "... output_u.o"
 	@echo "... output_u.i"
 	@echo "... output_u.s"
+	@echo "... output_x.o"
+	@echo "... output_x.i"
+	@echo "... output_x.s"
 	@echo "... parser.o"
 	@echo "... parser.i"
 	@echo "... parser.s"
