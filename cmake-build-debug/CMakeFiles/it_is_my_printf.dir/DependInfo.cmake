@@ -76,6 +76,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/bpole/CLionProjects/it_is_my_printf/output_persent.c" "/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/output_persent.c.o"
   "/Users/bpole/CLionProjects/it_is_my_printf/output_u.c" "/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/output_u.c.o"
   "/Users/bpole/CLionProjects/it_is_my_printf/output_x.c" "/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/output_x.c.o"
+  "/Users/bpole/CLionProjects/it_is_my_printf/outpyt_f.c" "/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/outpyt_f.c.o"
   "/Users/bpole/CLionProjects/it_is_my_printf/parser.c" "/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles/it_is_my_printf.dir/parser.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")

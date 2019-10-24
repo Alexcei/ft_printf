@@ -2,8 +2,21 @@
 
 int     main(void)
 {
-	int i = 15;
+	double i = 1.9509999;
 
+	printf("<%10.f>\n", i);
+	printf("<%+-10.f>\n", i);
+	printf("<%+10.f>\n", i);
+	printf("<%+010.f>\n", i);
+	printf("<%.f>\n", i);
+	printf("<% .f>\n", i);
+	printf("<%#.f>\n", i);
+	printf("<%-#5.f>\n", i);
+	printf("<%0+#10.f>\n", i);
+	printf("\n");
+	printf("<%.2f>\n", i);
+	ft_printf("<%.2f>\n", i);
+/*
 	printf("%d\n", printf("<%#X>\n", i));
 	printf("%d\n", ft_printf("<%#X>\n", i));
 	printf("\n");
@@ -17,7 +30,7 @@ int     main(void)
 	printf("%d\n", ft_printf("<%#-5.x>\n", i));
 	printf("\n");
 
-/*
+
 	printf("%d\n", printf("<%05i>\n", i));
 	printf("%d\n", ft_printf("<%05i>\n", i));
 	printf("\n");

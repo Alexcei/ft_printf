@@ -21,6 +21,7 @@ SRC = ft_printf.c \
 	  output_persent.c \
 	  output_o.c \
 	  output_x.c \
+	  output_f.c \
 
 OBJ = $(SRC:.c=.o)
 
