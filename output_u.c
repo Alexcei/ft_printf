@@ -1,24 +1,23 @@
 #include "ft_printf.h"
 
-static unsigned long int	get_figure(t_box *box, t_tab *tab)
+static void get_figure(t_box *box, t_tab *tab)
 {
-	unsigned long int	n;
-
-	if (tab->modifier_l)
-		n  = (unsigned long int)va_arg(box->av, unsigned long int);
-	else if (tab->modifier_h)
-		n  = (unsigned short)va_arg(box->av, unsigned int);
+	if (tab->modifier_l == 1)
+		tab->n  = (unsigned long int)va_arg(box->av, unsigned long int);
+	else if (tab->modifier_l > 1)
+		tab->n  = (unsigned long long int)va_arg(box->av, unsigned long long int);
+	else if (tab->modifier_h == 1)
+		tab->n  = (unsigned short)va_arg(box->av, unsigned int);
+	else if (tab->modifier_h > 1)
+		tab->n  = (unsigned char)va_arg(box->av, unsigned int);
 	else
-		n  = (unsigned int)va_arg(box->av, unsigned int);
-	tab->len = ft_figure_len((long long int)n, 10);
-	//if ((tab->len = ft_figure_len((long long int)n, 10)))
-		//box->res += tab->len;
-	if (n == 0 && tab->dot_prec)
+		tab->n  = (unsigned int)va_arg(box->av, unsigned int);
+	tab->len = ft_figure_len(tab->n, 10);
+	if (tab->n == 0 && tab->dot_prec)
 	{
 		tab->precision++;
 		tab->width++;
 	}
-	return (n);
 }
 
 static void    put_secondary(t_box *box, t_tab *tab)
@@ -42,9 +41,7 @@ static void    put_secondary(t_box *box, t_tab *tab)
 
 void    output_u(t_box *box, t_tab *tab)
 {
-	unsigned long int	n;
-
-	n = get_figure(box, tab);
+	get_figure(box, tab);
 	if (tab->precision > tab->len)
 	{
 		tab->width -= tab->precision;
@@ -56,10 +53,10 @@ void    output_u(t_box *box, t_tab *tab)
 		tab->precision -= tab->len;
 	}
 	put_secondary(box, tab);
-	if (n || !tab->dot_prec)
-		ft_figure_put_f(box, (long long int)n, 10, 97);
-	else
-		box->res--;
+	if (tab->n || !tab->dot_prec)
+		ft_figure_put(box, tab->n, 10, 97);
+	//else
+		//box->res--;
 	if (tab->flag_min)
 	{
 		while (tab->width-- > 0)

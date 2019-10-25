@@ -48,7 +48,7 @@ static void    put_secondary(t_box *box, t_tab *tab)
 		}
 		put_sign(box, tab);
 	}
-	ft_figure_put_f(box, tab->n, 10, 97);
+	ft_figure_put(box, tab->n, 10, 97);
 	if (tab->flag_grid || tab->precision)
 		ft_putchar_count(box, '.');
 

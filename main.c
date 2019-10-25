@@ -2,18 +2,11 @@
 
 int     main(void)
 {
-	int cost = 7800;
-
-	printf("До свидания! Ваше искусство слишком дорого обходится (%c%d)\n", '$', 2 * cost);
-	ft_printf("До свидания! Ваше искусство слишком дорого обходится (%c%d)\n", '$', 2 * cost);
-	printf("%*d\n", 10, 10);
-	printf("%s\n", "Hello world!");
-	ft_printf("%s\n", "Hello world!");
-	printf("<%lld>\n", -9223372036854775808);
-	ft_printf("<%lld>\n", -9223372036854775808);
+	printf("%d\n", printf("%.5p\n", 0));
+	printf("%d\n", ft_printf("%.5p\n", 0));
 	printf("\n");
-	printf("<%-05d>\n", 42);
-	ft_printf("<%-05d>\n", 42);
+	printf("%d\n", printf("<%hhu, %hhu>\n", 0, 255 + 42));
+	printf("%d\n", ft_printf("<%hhu, %hhu>\n", 0, 255 + 42));
 	printf("\n");
 	printf("<%-05d>\n", -42);
 	ft_printf("<%-05d>\n", -42);
@@ -26,6 +19,15 @@ int     main(void)
 	printf("\n");
 	printf("<%lu>\n", -42);
 	ft_printf("<%lu>\n", -42);
+	printf("\n");
+	printf("<%2p>\n", 0);
+	ft_printf("<%2p>\n", 0);
+	printf("\n");
+	printf("<%10i>\n", -12345);
+	ft_printf("<%10i>\n", -12345);
+	printf("\n");
+	printf("<%lld>\n", -9223372036854775808);
+	ft_printf("<%lld>\n", -9223372036854775808);
 	/*
 	double i = 1.025978548534310532934;
 	double long l = -1.012;

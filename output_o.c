@@ -15,8 +15,6 @@ static unsigned long long int	get_figure(t_box *box, t_tab *tab)
 	else
 		n  = (unsigned int)va_arg(box->av, unsigned int);
 	tab->len = ft_figure_len((long long int)n, 8);
-	//if ((tab->len = ft_figure_len((long long int)n, 8)))
-	//	box->res += tab->len;
 	if (n == 0 && tab->dot_prec)
 	{
 		tab->precision++;
@@ -65,13 +63,15 @@ void    output_o(t_box *box, t_tab *tab)
 		tab->width -= tab->len;
 		tab->precision -= tab->len;
 	}
+	if (tab->flag_min)
+		tab->flag_null = 0;
 	if (n == 0 && !tab->dot_prec)
 		tab->flag_grid = 0;
 	put_secondary(box, tab);
 	if (n || !tab->dot_prec)
-		ft_figure_put_f(box, (long long int)n, 8, 97);
-	else
-		box->res--;
+		ft_figure_put(box, (long long int)n, 8, 97);
+	//else
+	//	box->res--;
 	if (tab->flag_min)
 	{
 		while (tab->width-- > 0)
