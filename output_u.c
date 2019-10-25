@@ -10,8 +10,9 @@ static unsigned long int	get_figure(t_box *box, t_tab *tab)
 		n  = (unsigned short)va_arg(box->av, unsigned int);
 	else
 		n  = (unsigned int)va_arg(box->av, unsigned int);
-	if ((tab->len = ft_figure_len((long long int)n, 10)))
-		box->res += tab->len;
+	tab->len = ft_figure_len((long long int)n, 10);
+	//if ((tab->len = ft_figure_len((long long int)n, 10)))
+		//box->res += tab->len;
 	if (n == 0 && tab->dot_prec)
 	{
 		tab->precision++;
@@ -56,7 +57,7 @@ void    output_u(t_box *box, t_tab *tab)
 	}
 	put_secondary(box, tab);
 	if (n || !tab->dot_prec)
-		ft_figure_put((long long int)n, 10, 97);
+		ft_figure_put_f(box, (long long int)n, 10, 97);
 	else
 		box->res--;
 	if (tab->flag_min)

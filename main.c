@@ -2,34 +2,60 @@
 
 int     main(void)
 {
-	double i = 1.01;
+	int cost = 7800;
 
-	printf("<%f>\n", i);
-	ft_printf("<%f>\n", i);
+	printf("До свидания! Ваше искусство слишком дорого обходится (%c%d)\n", '$', 2 * cost);
+	ft_printf("До свидания! Ваше искусство слишком дорого обходится (%c%d)\n", '$', 2 * cost);
+	printf("%*d\n", 10, 10);
+	printf("%s\n", "Hello world!");
+	ft_printf("%s\n", "Hello world!");
+	printf("<%lld>\n", -9223372036854775808);
+	ft_printf("<%lld>\n", -9223372036854775808);
 	printf("\n");
-	printf("<%+-10.f>\n", i);
-	ft_printf("<%+-10.f>\n", i);
+	printf("<%-05d>\n", 42);
+	ft_printf("<%-05d>\n", 42);
 	printf("\n");
-	printf("<%+10.f>\n", i);
-	ft_printf("<%+10.f>\n", i);
+	printf("<%-05d>\n", -42);
+	ft_printf("<%-05d>\n", -42);
 	printf("\n");
-	printf("<%+010.f>\n", i);
-	ft_printf("<%+010.f>\n", i);
+	printf("<%#-08x>\n", 42);
+	ft_printf("<%#-08x>\n", 42);
 	printf("\n");
-	printf("<%.f>\n", i);
-	ft_printf("<%.f>\n", i);
+	printf("<%-05o>\n", 2500);
+	ft_printf("<%-05o>\n", 2500);
 	printf("\n");
-	printf("<% .f>\n", i);
-	ft_printf("<% .f>\n", i);
+	printf("<%lu>\n", -42);
+	ft_printf("<%lu>\n", -42);
+	/*
+	double i = 1.025978548534310532934;
+	double long l = -1.012;
+
+	printf("%d\n", printf("<%.19f>\n", i));
+	printf("%d\n", ft_printf("<%.19f>\n", i));
 	printf("\n");
-	printf("<%#.f>\n", i);
-	ft_printf("<%#.f>\n", i);
+	printf("%d\n", printf("<%.3Lf>\n", l));
+	printf("%d\n", ft_printf("<%.3Lf>\n", l));
 	printf("\n");
-	printf("<%-#5.f>\n", i);
-	ft_printf("<%-#5.f>\n", i);
+	printf("%d\n", printf("<%+10.f>\n", i));
+	printf("%d\n", ft_printf("<%+10.f>\n", i));
 	printf("\n");
-	printf("<%0+#10.f>\n", i);
-	ft_printf("<%0+#10.f>\n", i);
+	printf("%d\n", printf("<%+010.f>\n", i));
+	printf("%d\n", ft_printf("<%+010.f>\n", i));
+	printf("\n");
+	printf("%d\n", printf("<%.f>\n", i));
+	printf("%d\n", ft_printf("<%.f>\n", i));
+	printf("\n");
+	printf("%d\n", printf("<% .f>\n", i));
+	printf("%d\n", ft_printf("<% .f>\n", i));
+	printf("\n");
+	printf("%d\n", printf("<%#.f>\n", i));
+	printf("%d\n", ft_printf("<%#.f>\n", i));
+	printf("\n");
+	printf("%d\n", printf("<%-#5.f>\n", i));
+	printf("%d\n", ft_printf("<%-#5.f>\n", i));
+	printf("\n");
+	printf("%d\n", printf("<%0+#10.f>\n", i));
+	printf("%d\n", ft_printf("<%0+#10.f>\n", i));
 	printf("\n");
 	printf("\n");
 	printf("<%10f>\n", i);
@@ -58,7 +84,7 @@ int     main(void)
 	printf("\n");
 	printf("<%0+#10f>\n", i);
 	ft_printf("<%0+#10f>\n", i);
-	printf("\n");
+	printf("\n");*/
 /*
 	printf("%d\n", printf("<%#X>\n", i));
 	printf("%d\n", ft_printf("<%#X>\n", i));

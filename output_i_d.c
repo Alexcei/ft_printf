@@ -16,8 +16,9 @@ static long long int	get_figure(t_box *box, t_tab *tab)
 		n  = (int)va_arg(box->av, int);
 	if (n < 0 && ++tab->sign)
 		n *= -1;                      // not like that
-	if ((tab->len = ft_figure_len(n, 10)))
-		box->res += tab->len;
+	tab->len = ft_figure_len(n, 10);
+	//if ((tab->len = ft_figure_len(n, 10)))
+	//	box->res += tab->len;
 	if (n == 0 && tab->dot_prec)
 	{
 		tab->precision++;
@@ -76,7 +77,7 @@ void    output_d(t_box *box, t_tab *tab)
 	}
 	put_secondary(box, tab);
 	if (n || !tab->dot_prec)
-		ft_figure_put(n, 10, 97);
+		ft_figure_put_f(box, n, 10, 97);
 	else
 		box->res--;
 	if (tab->flag_min)
