@@ -1905,6 +1905,33 @@ output_c_s.c.s:
 	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_c_s.c.s
 .PHONY : output_c_s.c.s
 
+output_f.o: output_f.c.o
+
+.PHONY : output_f.o
+
+# target to build an object file
+output_f.c.o:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_f.c.o
+.PHONY : output_f.c.o
+
+output_f.i: output_f.c.i
+
+.PHONY : output_f.i
+
+# target to preprocess a source file
+output_f.c.i:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_f.c.i
+.PHONY : output_f.c.i
+
+output_f.s: output_f.c.s
+
+.PHONY : output_f.s
+
+# target to generate assembly for a file
+output_f.c.s:
+	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_f.c.s
+.PHONY : output_f.c.s
+
 output_i_d.o: output_i_d.c.o
 
 .PHONY : output_i_d.o
@@ -2066,33 +2093,6 @@ output_x.s: output_x.c.s
 output_x.c.s:
 	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/output_x.c.s
 .PHONY : output_x.c.s
-
-outpyt_f.o: outpyt_f.c.o
-
-.PHONY : outpyt_f.o
-
-# target to build an object file
-outpyt_f.c.o:
-	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/outpyt_f.c.o
-.PHONY : outpyt_f.c.o
-
-outpyt_f.i: outpyt_f.c.i
-
-.PHONY : outpyt_f.i
-
-# target to preprocess a source file
-outpyt_f.c.i:
-	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/outpyt_f.c.i
-.PHONY : outpyt_f.c.i
-
-outpyt_f.s: outpyt_f.c.s
-
-.PHONY : outpyt_f.s
-
-# target to generate assembly for a file
-outpyt_f.c.s:
-	$(MAKE) -f CMakeFiles/it_is_my_printf.dir/build.make CMakeFiles/it_is_my_printf.dir/outpyt_f.c.s
-.PHONY : outpyt_f.c.s
 
 parser.o: parser.c.o
 
@@ -2328,6 +2328,9 @@ help:
 	@echo "... output_c_s.o"
 	@echo "... output_c_s.i"
 	@echo "... output_c_s.s"
+	@echo "... output_f.o"
+	@echo "... output_f.i"
+	@echo "... output_f.s"
 	@echo "... output_i_d.o"
 	@echo "... output_i_d.i"
 	@echo "... output_i_d.s"
@@ -2346,9 +2349,6 @@ help:
 	@echo "... output_x.o"
 	@echo "... output_x.i"
 	@echo "... output_x.s"
-	@echo "... outpyt_f.o"
-	@echo "... outpyt_f.i"
-	@echo "... outpyt_f.s"
 	@echo "... parser.o"
 	@echo "... parser.i"
 	@echo "... parser.s"

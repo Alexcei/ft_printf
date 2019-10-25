@@ -915,9 +915,22 @@ CMakeFiles/it_is_my_printf.dir/output_c_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/it_is_my_printf.dir/output_c_s.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/it_is_my_printf/output_c_s.c -o CMakeFiles/it_is_my_printf.dir/output_c_s.c.s
 
+CMakeFiles/it_is_my_printf.dir/output_f.c.o: CMakeFiles/it_is_my_printf.dir/flags.make
+CMakeFiles/it_is_my_printf.dir/output_f.c.o: ../output_f.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/it_is_my_printf.dir/output_f.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/it_is_my_printf.dir/output_f.c.o   -c /Users/bpole/CLionProjects/it_is_my_printf/output_f.c
+
+CMakeFiles/it_is_my_printf.dir/output_f.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/it_is_my_printf.dir/output_f.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bpole/CLionProjects/it_is_my_printf/output_f.c > CMakeFiles/it_is_my_printf.dir/output_f.c.i
+
+CMakeFiles/it_is_my_printf.dir/output_f.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/it_is_my_printf.dir/output_f.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/it_is_my_printf/output_f.c -o CMakeFiles/it_is_my_printf.dir/output_f.c.s
+
 CMakeFiles/it_is_my_printf.dir/output_i_d.c.o: CMakeFiles/it_is_my_printf.dir/flags.make
 CMakeFiles/it_is_my_printf.dir/output_i_d.c.o: ../output_i_d.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/it_is_my_printf.dir/output_i_d.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/it_is_my_printf.dir/output_i_d.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/it_is_my_printf.dir/output_i_d.c.o   -c /Users/bpole/CLionProjects/it_is_my_printf/output_i_d.c
 
 CMakeFiles/it_is_my_printf.dir/output_i_d.c.i: cmake_force
@@ -930,7 +943,7 @@ CMakeFiles/it_is_my_printf.dir/output_i_d.c.s: cmake_force
 
 CMakeFiles/it_is_my_printf.dir/output_o.c.o: CMakeFiles/it_is_my_printf.dir/flags.make
 CMakeFiles/it_is_my_printf.dir/output_o.c.o: ../output_o.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/it_is_my_printf.dir/output_o.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/it_is_my_printf.dir/output_o.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/it_is_my_printf.dir/output_o.c.o   -c /Users/bpole/CLionProjects/it_is_my_printf/output_o.c
 
 CMakeFiles/it_is_my_printf.dir/output_o.c.i: cmake_force
@@ -943,7 +956,7 @@ CMakeFiles/it_is_my_printf.dir/output_o.c.s: cmake_force
 
 CMakeFiles/it_is_my_printf.dir/output_p.c.o: CMakeFiles/it_is_my_printf.dir/flags.make
 CMakeFiles/it_is_my_printf.dir/output_p.c.o: ../output_p.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/it_is_my_printf.dir/output_p.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/it_is_my_printf.dir/output_p.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/it_is_my_printf.dir/output_p.c.o   -c /Users/bpole/CLionProjects/it_is_my_printf/output_p.c
 
 CMakeFiles/it_is_my_printf.dir/output_p.c.i: cmake_force
@@ -956,7 +969,7 @@ CMakeFiles/it_is_my_printf.dir/output_p.c.s: cmake_force
 
 CMakeFiles/it_is_my_printf.dir/output_persent.c.o: CMakeFiles/it_is_my_printf.dir/flags.make
 CMakeFiles/it_is_my_printf.dir/output_persent.c.o: ../output_persent.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/it_is_my_printf.dir/output_persent.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/it_is_my_printf.dir/output_persent.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/it_is_my_printf.dir/output_persent.c.o   -c /Users/bpole/CLionProjects/it_is_my_printf/output_persent.c
 
 CMakeFiles/it_is_my_printf.dir/output_persent.c.i: cmake_force
@@ -969,7 +982,7 @@ CMakeFiles/it_is_my_printf.dir/output_persent.c.s: cmake_force
 
 CMakeFiles/it_is_my_printf.dir/output_u.c.o: CMakeFiles/it_is_my_printf.dir/flags.make
 CMakeFiles/it_is_my_printf.dir/output_u.c.o: ../output_u.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/it_is_my_printf.dir/output_u.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/it_is_my_printf.dir/output_u.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/it_is_my_printf.dir/output_u.c.o   -c /Users/bpole/CLionProjects/it_is_my_printf/output_u.c
 
 CMakeFiles/it_is_my_printf.dir/output_u.c.i: cmake_force
@@ -982,7 +995,7 @@ CMakeFiles/it_is_my_printf.dir/output_u.c.s: cmake_force
 
 CMakeFiles/it_is_my_printf.dir/output_x.c.o: CMakeFiles/it_is_my_printf.dir/flags.make
 CMakeFiles/it_is_my_printf.dir/output_x.c.o: ../output_x.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/it_is_my_printf.dir/output_x.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/it_is_my_printf.dir/output_x.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/it_is_my_printf.dir/output_x.c.o   -c /Users/bpole/CLionProjects/it_is_my_printf/output_x.c
 
 CMakeFiles/it_is_my_printf.dir/output_x.c.i: cmake_force
@@ -992,19 +1005,6 @@ CMakeFiles/it_is_my_printf.dir/output_x.c.i: cmake_force
 CMakeFiles/it_is_my_printf.dir/output_x.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/it_is_my_printf.dir/output_x.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/it_is_my_printf/output_x.c -o CMakeFiles/it_is_my_printf.dir/output_x.c.s
-
-CMakeFiles/it_is_my_printf.dir/outpyt_f.c.o: CMakeFiles/it_is_my_printf.dir/flags.make
-CMakeFiles/it_is_my_printf.dir/outpyt_f.c.o: ../outpyt_f.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/bpole/CLionProjects/it_is_my_printf/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/it_is_my_printf.dir/outpyt_f.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/it_is_my_printf.dir/outpyt_f.c.o   -c /Users/bpole/CLionProjects/it_is_my_printf/outpyt_f.c
-
-CMakeFiles/it_is_my_printf.dir/outpyt_f.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/it_is_my_printf.dir/outpyt_f.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/bpole/CLionProjects/it_is_my_printf/outpyt_f.c > CMakeFiles/it_is_my_printf.dir/outpyt_f.c.i
-
-CMakeFiles/it_is_my_printf.dir/outpyt_f.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/it_is_my_printf.dir/outpyt_f.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/bpole/CLionProjects/it_is_my_printf/outpyt_f.c -o CMakeFiles/it_is_my_printf.dir/outpyt_f.c.s
 
 CMakeFiles/it_is_my_printf.dir/parser.c.o: CMakeFiles/it_is_my_printf.dir/flags.make
 CMakeFiles/it_is_my_printf.dir/parser.c.o: ../parser.c
@@ -1087,13 +1087,13 @@ it_is_my_printf_OBJECTS = \
 "CMakeFiles/it_is_my_printf.dir/ft_printf.c.o" \
 "CMakeFiles/it_is_my_printf.dir/main.c.o" \
 "CMakeFiles/it_is_my_printf.dir/output_c_s.c.o" \
+"CMakeFiles/it_is_my_printf.dir/output_f.c.o" \
 "CMakeFiles/it_is_my_printf.dir/output_i_d.c.o" \
 "CMakeFiles/it_is_my_printf.dir/output_o.c.o" \
 "CMakeFiles/it_is_my_printf.dir/output_p.c.o" \
 "CMakeFiles/it_is_my_printf.dir/output_persent.c.o" \
 "CMakeFiles/it_is_my_printf.dir/output_u.c.o" \
 "CMakeFiles/it_is_my_printf.dir/output_x.c.o" \
-"CMakeFiles/it_is_my_printf.dir/outpyt_f.c.o" \
 "CMakeFiles/it_is_my_printf.dir/parser.c.o"
 
 # External object files for target it_is_my_printf
@@ -1165,13 +1165,13 @@ it_is_my_printf: CMakeFiles/it_is_my_printf.dir/libft/ft_toupper.c.o
 it_is_my_printf: CMakeFiles/it_is_my_printf.dir/ft_printf.c.o
 it_is_my_printf: CMakeFiles/it_is_my_printf.dir/main.c.o
 it_is_my_printf: CMakeFiles/it_is_my_printf.dir/output_c_s.c.o
+it_is_my_printf: CMakeFiles/it_is_my_printf.dir/output_f.c.o
 it_is_my_printf: CMakeFiles/it_is_my_printf.dir/output_i_d.c.o
 it_is_my_printf: CMakeFiles/it_is_my_printf.dir/output_o.c.o
 it_is_my_printf: CMakeFiles/it_is_my_printf.dir/output_p.c.o
 it_is_my_printf: CMakeFiles/it_is_my_printf.dir/output_persent.c.o
 it_is_my_printf: CMakeFiles/it_is_my_printf.dir/output_u.c.o
 it_is_my_printf: CMakeFiles/it_is_my_printf.dir/output_x.c.o
-it_is_my_printf: CMakeFiles/it_is_my_printf.dir/outpyt_f.c.o
 it_is_my_printf: CMakeFiles/it_is_my_printf.dir/parser.c.o
 it_is_my_printf: CMakeFiles/it_is_my_printf.dir/build.make
 it_is_my_printf: CMakeFiles/it_is_my_printf.dir/link.txt

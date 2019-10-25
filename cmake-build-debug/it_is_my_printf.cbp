@@ -284,6 +284,9 @@
 		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/output_c_s.c">
 			<Option target="it_is_my_printf"/>
 		</Unit>
+		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/output_f.c">
+			<Option target="it_is_my_printf"/>
+		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/output_i_d.c">
 			<Option target="it_is_my_printf"/>
 		</Unit>
@@ -300,9 +303,6 @@
 			<Option target="it_is_my_printf"/>
 		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/output_x.c">
-			<Option target="it_is_my_printf"/>
-		</Unit>
-		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/outpyt_f.c">
 			<Option target="it_is_my_printf"/>
 		</Unit>
 		<Unit filename="/Users/bpole/CLionProjects/it_is_my_printf/parser.c">

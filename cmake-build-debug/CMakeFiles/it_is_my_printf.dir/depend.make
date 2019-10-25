@@ -189,6 +189,10 @@ CMakeFiles/it_is_my_printf.dir/output_c_s.c.o: ../ft_printf.h
 CMakeFiles/it_is_my_printf.dir/output_c_s.c.o: ../libft/libft.h
 CMakeFiles/it_is_my_printf.dir/output_c_s.c.o: ../output_c_s.c
 
+CMakeFiles/it_is_my_printf.dir/output_f.c.o: ../ft_printf.h
+CMakeFiles/it_is_my_printf.dir/output_f.c.o: ../libft/libft.h
+CMakeFiles/it_is_my_printf.dir/output_f.c.o: ../output_f.c
+
 CMakeFiles/it_is_my_printf.dir/output_i_d.c.o: ../ft_printf.h
 CMakeFiles/it_is_my_printf.dir/output_i_d.c.o: ../libft/libft.h
 CMakeFiles/it_is_my_printf.dir/output_i_d.c.o: ../output_i_d.c
@@ -212,10 +216,6 @@ CMakeFiles/it_is_my_printf.dir/output_u.c.o: ../output_u.c
 CMakeFiles/it_is_my_printf.dir/output_x.c.o: ../ft_printf.h
 CMakeFiles/it_is_my_printf.dir/output_x.c.o: ../libft/libft.h
 CMakeFiles/it_is_my_printf.dir/output_x.c.o: ../output_x.c
-
-CMakeFiles/it_is_my_printf.dir/outpyt_f.c.o: ../ft_printf.h
-CMakeFiles/it_is_my_printf.dir/outpyt_f.c.o: ../libft/libft.h
-CMakeFiles/it_is_my_printf.dir/outpyt_f.c.o: ../outpyt_f.c
 
 CMakeFiles/it_is_my_printf.dir/parser.c.o: ../ft_printf.h
 CMakeFiles/it_is_my_printf.dir/parser.c.o: ../libft/libft.h

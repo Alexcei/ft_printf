@@ -30,6 +30,9 @@ typedef struct  s_tab
     int         modifier_h;
     int         modifier_l;
     int         modifier_L;
+
+	long	n;
+	long	decimal;
 }               t_tab;
 
 int     ft_printf(const char *format, ...);
