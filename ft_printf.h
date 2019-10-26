@@ -1,9 +1,9 @@
 #ifndef IT_IS_MY_PRINTF_FT_PRINTF_H
 # define IT_IS_MY_PRINTF_FT_PRINTF_H
 
-#include <stdio.h>
-#include <stdarg.h>
-#include "libft/libft.h"
+# include <stdio.h>
+# include <stdarg.h>
+# include "libft/libft.h"
 
 typedef struct  s_box
 {
@@ -30,7 +30,7 @@ typedef struct  s_tab
     int         modifier_h;
     int         modifier_l;
     int         modifier_L;
-
+	int 		wildcard;
 	unsigned long	n;
 	long	decimal;
 }               t_tab;

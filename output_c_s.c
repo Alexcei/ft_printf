@@ -1,28 +1,37 @@
 #include "ft_printf.h"
 
+static void		put_width(t_box *box, t_tab *tab)
+{
+	while (tab->width--)
+	{
+		if (tab->flag_null && !tab->flag_min)
+			ft_putchar_count(box, '0');
+		else
+			ft_putchar_count(box, ' ');
+	}
+}
+
 void    output_s(t_box *box, t_tab *tab)
 {
-    char    *s;
+	char *s;
 
-    if ((s = va_arg(box->av, char*)))
-        box->str = ft_strdup(s);
-    else
-        box->str = ft_strdup("(null)");
-    tab->len = ft_strlen(box->str);
-    if (tab->dot_prec && tab->len > tab->precision)
-    {
-        box->str[tab->precision] = '\0';
-        tab->len = tab->precision;
-    }
-    if (tab->width > tab->len)
-        tab->width -= tab->len;
-    else
-    	tab->width = 0;
-    box->res += tab->len;
-    if (tab->flag_min)
+	if ((s = va_arg(box->av, char*)))
+		box->str = ft_strdup(s);
+	else
+		box->str = ft_strdup("(null)");
+	tab->len = ft_strlen(box->str);
+	if (tab->dot_prec && tab->len > tab->precision) {
+		box->str[tab->precision] = '\0';
+		tab->len = tab->precision;
+	}
+	if (tab->width > tab->len)
+		tab->width -= tab->len;
+	else
+		tab->width = 0;
+	box->res += tab->len;
+	if (tab->flag_min)
 		write(1, box->str, tab->len);
-    while (tab->width--)
-		ft_putchar_count(box, ' ');
+	put_width(box, tab);
 	if (!tab->flag_min)
 		write(1, box->str, tab->len);
     free(box->str);
@@ -37,8 +46,7 @@ void    output_c(t_box *box, t_tab *tab)
 		tab->width--;
 	if (tab->flag_min)
 		ft_putchar_count(box, s);
-	while (tab->width--)
-		ft_putchar_count(box, ' ');
+	put_width(box, tab);
 	if (!tab->flag_min)
 		ft_putchar_count(box, s);
 }

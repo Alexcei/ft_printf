@@ -1,8 +1,8 @@
 #include "ft_printf.h"
 
-static unsigned long long int	get_figure(t_box *box, t_tab *tab)
+static void		get_figure(t_box *box, t_tab *tab)
 {
-	unsigned long long int	n;
+	unsigned long long	n;
 
 	if (tab->modifier_h == 1)
 		n  = (unsigned short)va_arg(box->av, unsigned int);
@@ -14,13 +14,13 @@ static unsigned long long int	get_figure(t_box *box, t_tab *tab)
 		n  = (unsigned long long)va_arg(box->av, unsigned long long int);
 	else
 		n  = (unsigned int)va_arg(box->av, unsigned int);
-	tab->len = ft_figure_len((long long int)n, 8);
+	tab->n = (unsigned long)n;
+	tab->len = ft_figure_len(tab->n, 8);
 	if (n == 0 && tab->dot_prec)
 	{
 		tab->precision++;
 		tab->width++;
 	}
-	return (n);
 }
 
 static void    put_secondary(t_box *box, t_tab *tab)
@@ -50,9 +50,7 @@ static void    put_secondary(t_box *box, t_tab *tab)
 
 void    output_o(t_box *box, t_tab *tab)
 {
-	unsigned long long int	n;
-
-	n = get_figure(box, tab);
+	get_figure(box, tab);
 	if (tab->precision > tab->len)
 	{
 		tab->width -= tab->precision;
@@ -65,13 +63,11 @@ void    output_o(t_box *box, t_tab *tab)
 	}
 	if (tab->flag_min)
 		tab->flag_null = 0;
-	if (n == 0 && !tab->dot_prec)
+	if (tab->n == 0 && !tab->dot_prec)
 		tab->flag_grid = 0;
 	put_secondary(box, tab);
-	if (n || !tab->dot_prec)
-		ft_figure_put(box, (long long int)n, 8, 97);
-	//else
-	//	box->res--;
+	if (tab->n || !tab->dot_prec)
+		ft_figure_put(box, tab->n, 8, 97);
 	if (tab->flag_min)
 	{
 		while (tab->width-- > 0)

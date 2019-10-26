@@ -2,6 +2,74 @@
 
 int     main(void)
 {
+	printf("{%*d}\n", 5, 42);
+	ft_printf("{%*d}\n", -5, 42);
+	printf("\n");
+
+	printf("{%05.*d}\n", -11, 42);
+	ft_printf("{%05.*d}\n", -11, 42);
+	printf("\n");
+
+	printf("%d\n", printf("{%05.*d}\n", -15, 42));
+	ft_printf("%d\n", printf("{%05.*d}\n", -15, 42));
+	printf("\n");
+
+	printf("{%05.10d}\n", 42);
+	ft_printf("{%05.10d}\n", 42);
+	printf("\n");
+
+	printf("{%.*d}\n", -5, 42);
+	ft_printf("{%.*d}\n", -5, 42);
+	/*
+	printf("{%.*d}\n", -5, 42);
+	ft_printf("{%.*d}\n", -5, 42);
+	printf("%d\n", printf("{%*d}\n", -5, 42));
+	printf("%d\n", ft_printf("{%*d}\n", -5, 42));
+	printf("\n");
+	printf("<%*d>\n", 5, 42);
+	ft_printf("<%*d>\n", 5, 42);
+	printf("<%*.*d>\n", 0, 3, 0);
+	ft_printf("<%*.*d>\n", 0, 3, 0);
+	printf("{%*3d}\n", 5, 0);
+	ft_printf("{%*3d}\n", 5, 0);
+	printf("\n");
+	//printf("<%.20f>\n",        1.025978548534310421934);
+	//ft_printf("<%.20f>\n",        1.025978548534310421934);*/
+	/*
+	printf("%05c\n", 42);
+	ft_printf("%05c\n", 42);
+	printf("\n");
+	printf("%-010s is a string\n", "this");
+	ft_printf("%-010s is a string\n", "this");
+	printf("\n");
+	printf("%010s is a string\n", "this");
+	ft_printf("%010s is a string\n", "this");
+	printf("\n");
+	printf("@main_ftprintf: %####-0000 33.d>\n", 256);
+	printf("@main_ftprintf: %####-0000 33...12..00d>\n", 256);
+	ft_printf("@main_ftprintf: %####-0000 33...12..00d>\n", 256);
+	printf("\n");
+	printf("%hU\n", 4294967296);
+	ft_printf("%llU\n", 4294967296);
+	printf("\n");
+	printf("%U\n", 4294967296);
+	ft_printf("%llU\n", 4294967296);
+	printf("\n");
+	printf("@main_ftprintf: %####0000 33..1..#00d\n", 256);
+	ft_printf("@main_ftprintf: %####0000 33..1..#00d\n", 256);
+	printf("\n");
+	printf("%zd\n", 4294967295);
+	ft_printf("%zd\n", 4294967295);
+	printf("%lx\n", 4294967296);
+	ft_printf("%jx\n", 4294967296);
+	printf("\n");
+	printf("%x\n", -4294967296);
+	ft_printf("%x\n", -4294967296);
+	printf("\n");
+	printf("%zx\n", -4294967297);
+	ft_printf("%zx\n", -4294967297);
+	printf("\n");
+
 	printf("%d\n", printf("%.5p\n", 0));
 	printf("%d\n", ft_printf("%.5p\n", 0));
 	printf("\n");
@@ -28,7 +96,7 @@ int     main(void)
 	printf("\n");
 	printf("<%lld>\n", -9223372036854775808);
 	ft_printf("<%lld>\n", -9223372036854775808);
-	/*
+
 	double i = 1.025978548534310532934;
 	double long l = -1.012;
 

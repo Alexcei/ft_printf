@@ -4,14 +4,14 @@ static void get_figure(t_box *box, t_tab *tab)
 {
 	long long int	n;
 
-	if (tab->modifier_h == 1)
-		n  = (short)va_arg(box->av, int);
-	else if (tab->modifier_h > 1)
-		n  = (signed char)va_arg(box->av, int);
-	else if (tab->modifier_l == 1)
+	if (tab->modifier_l == 1)
 		n  = (long)va_arg(box->av, long int);
 	else if (tab->modifier_l > 1)
 		n  = (long long)va_arg(box->av, long long int);
+	else if (tab->modifier_h == 1)
+		n  = (short)va_arg(box->av, int);
+	else if (tab->modifier_h > 1)
+		n  = (signed char)va_arg(box->av, int);
 	else
 		n  = (int)va_arg(box->av, int);
 	if (n < 0 && ++tab->sign)

@@ -10,6 +10,8 @@ void    parser_type(t_box *box, t_tab *tab)
 		output_d(box, tab);
 	else if (box->format[box->i] == 'u' && ++box->i)
 		output_u(box, tab);
+	else if (box->format[box->i] == 'U' && ++box->i && (tab->modifier_l += 2))
+		output_u(box, tab);
 	else if (box->format[box->i] == 'o' && ++box->i)
 		output_o(box, tab);
 	else if (box->format[box->i] == 'x' && ++box->i)
@@ -52,39 +54,71 @@ void    parser_modifier(t_box *box, t_tab *tab)
         tab->modifier_h += 1;
     if (box->format[box->i] == 'l' && ++box->i)
         tab->modifier_l += 1;
+	if (box->format[box->i] == 'j' && ++box->i)
+		tab->modifier_l += 1;
+	if (box->format[box->i] == 'z' && ++box->i)
+		tab->modifier_l += 1;
     if (box->format[box->i] == 'L' && ++box->i)
         tab->modifier_L = 1;
     if (i != box->i)
 		parser_modifier(box, tab);
 }
 
+void	parser_number(t_box *box, t_tab *tab, int *pars)
+{
+	if ((!*pars || tab->wildcard) && ft_isdigit(box->format[box->i]))
+	{
+		*pars = 0;
+		while (ft_isdigit(box->format[box->i]))
+		{
+			*pars *= 10;
+			*pars += box->format[box->i] - '0';
+			box->i++;
+		}
+	}
+}
+
+void	parser_wildcard(t_box *box, t_tab *tab, int *pars)
+{
+	int	i;
+
+	if (box->format[box->i] == '*' && ++box->i)
+	{
+		tab->wildcard = 1;
+		if ((i = (int)va_arg(box->av, int)))
+		{
+			*pars = FT_ABS(i);
+			if (i < 0)
+			{
+				tab->precision = i % 10;
+				tab->flag_min = 1;
+			}
+		}
+		else
+			tab->flag_null = 1;
+	}
+}
+
 void    parser_form(t_box *box, t_tab *tab)
 {
+	int     i;
+
+	i = box->i;
     parser_flag(box, tab);
-    if (ft_isdigit(box->format[box->i]))
-    {
-        while (ft_isdigit(box->format[box->i]))
-        {
-            tab->width *= 10;
-            tab->width += box->format[box->i] - '0';
-            box->i++;
-        }
-    }
+	parser_wildcard(box, tab, &tab->width);
+	parser_number(box, tab, &tab->width);
     if (box->format[box->i] == '.' && ++box->i)
     {
-        tab->dot_prec = 1;
-        if (ft_isdigit(box->format[box->i]))
-        {
-            while (ft_isdigit(box->format[box->i]))
-            {
-                tab->precision *= 10;
-                tab->precision += box->format[box->i] - '0';
-                box->i++;
-            }
-        }
-    }
+		tab->dot_prec++;
+    	tab->precision = 0;
+		parser_wildcard(box, tab, &tab->precision);
+		parser_number(box, tab, &tab->precision);
+	}
     parser_modifier(box, tab);
-    parser_type(box, tab);
+	if (i != box->i)
+		parser_form(box, tab);
+	else
+		parser_type(box, tab);
 }
 
 void    parser(t_box *box, t_tab *tab)
