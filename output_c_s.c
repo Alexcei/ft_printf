@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   output_c_s.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/10/27 12:16:47 by bpole             #+#    #+#             */
+/*   Updated: 2019/10/27 12:16:56 by bpole            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 static void		put_width(t_box *box, t_tab *tab)
@@ -11,16 +23,17 @@ static void		put_width(t_box *box, t_tab *tab)
 	}
 }
 
-void    output_s(t_box *box, t_tab *tab)
+void			output_s(t_box *box, t_tab *tab)
 {
-	char *s;
+	char		*s;
 
 	if ((s = va_arg(box->av, char*)))
 		box->str = ft_strdup(s);
 	else
 		box->str = ft_strdup("(null)");
 	tab->len = ft_strlen(box->str);
-	if (tab->dot_prec && tab->len > tab->precision) {
+	if (tab->dot_prec && tab->len > tab->precision)
+	{
 		box->str[tab->precision] = '\0';
 		tab->len = tab->precision;
 	}
@@ -34,12 +47,12 @@ void    output_s(t_box *box, t_tab *tab)
 	put_width(box, tab);
 	if (!tab->flag_min)
 		write(1, box->str, tab->len);
-    free(box->str);
+	free(box->str);
 }
 
-void    output_c(t_box *box, t_tab *tab)
+void			output_c(t_box *box, t_tab *tab)
 {
-	char    s;
+	char		s;
 
 	s = (char)va_arg(box->av, char*);
 	if (tab->width > 0)

@@ -1,19 +1,31 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   output_x.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/10/27 12:27:31 by bpole             #+#    #+#             */
+/*   Updated: 2019/10/27 12:28:48 by bpole            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
-static void		get_figure(t_box *box, t_tab *tab)
+static void			get_figure(t_box *box, t_tab *tab)
 {
 	unsigned long	n;
 
 	if (tab->modifier_l == 1)
-		n  = (unsigned long)va_arg(box->av, unsigned long int);
+		n = (unsigned long)va_arg(box->av, unsigned long int);
 	else if (tab->modifier_l > 1)
-		n  = (unsigned long long)va_arg(box->av, unsigned long long int);
+		n = (unsigned long long)va_arg(box->av, unsigned long long int);
 	else if (tab->modifier_h == 1)
-		n  = (unsigned short)va_arg(box->av, unsigned int);
+		n = (unsigned short)va_arg(box->av, unsigned int);
 	else if (tab->modifier_h > 1)
-		n  = (unsigned char)va_arg(box->av, unsigned int);
+		n = (unsigned char)va_arg(box->av, unsigned int);
 	else
-		n  = (unsigned int)va_arg(box->av, unsigned int);
+		n = (unsigned int)va_arg(box->av, unsigned int);
 	tab->n = (unsigned long)n;
 	tab->len = ft_figure_len(tab->n, 16);
 	if (n == 0 && tab->dot_prec)
@@ -23,7 +35,7 @@ static void		get_figure(t_box *box, t_tab *tab)
 	}
 }
 
-static void    put_secondary(t_box *box, t_tab *tab, char x)
+static void			put_secondary(t_box *box, t_tab *tab, char x)
 {
 	if (tab->dot_prec)
 		tab->flag_null = 0;
@@ -43,11 +55,11 @@ static void    put_secondary(t_box *box, t_tab *tab, char x)
 	}
 	while (tab->flag_null && tab->width-- > 0)
 		ft_putchar_count(box, '0');
-	while (tab->precision--  > 0)
-		ft_putchar_count(box, '0');;
+	while (tab->precision-- > 0)
+		ft_putchar_count(box, '0');
 }
 
-void    output_x(t_box *box, t_tab *tab, char x)
+void				output_x(t_box *box, t_tab *tab, char x)
 {
 	get_figure(box, tab);
 	if (tab->precision > tab->len)

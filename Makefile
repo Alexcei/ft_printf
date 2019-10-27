@@ -22,6 +22,7 @@ SRC = ft_printf.c \
 	  output_o.c \
 	  output_x.c \
 	  output_f.c \
+	  bonus_wildcard.c \
 
 OBJ = $(SRC:.c=.o)
 
