@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/bpole/CLionProjects/it_is_my_printf/ft_printf.c
-ft_printf.h
-/Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
-
 /Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
 stdio.h
 -
@@ -25,42 +21,6 @@ stdlib.h
 -
 unistd.h
 -
-
-/Users/bpole/CLionProjects/it_is_my_printf/main.c
-ft_printf.h
-/Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
-
-/Users/bpole/CLionProjects/it_is_my_printf/output_c_s.c
-ft_printf.h
-/Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
-
-/Users/bpole/CLionProjects/it_is_my_printf/output_f.c
-ft_printf.h
-/Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
-
-/Users/bpole/CLionProjects/it_is_my_printf/output_i_d.c
-ft_printf.h
-/Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
-
-/Users/bpole/CLionProjects/it_is_my_printf/output_o.c
-ft_printf.h
-/Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
-
-/Users/bpole/CLionProjects/it_is_my_printf/output_p.c
-ft_printf.h
-/Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
-
-/Users/bpole/CLionProjects/it_is_my_printf/output_persent.c
-ft_printf.h
-/Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
-
-/Users/bpole/CLionProjects/it_is_my_printf/output_u.c
-ft_printf.h
-/Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
-
-/Users/bpole/CLionProjects/it_is_my_printf/output_x.c
-ft_printf.h
-/Users/bpole/CLionProjects/it_is_my_printf/ft_printf.h
 
 /Users/bpole/CLionProjects/it_is_my_printf/parser.c
 ft_printf.h

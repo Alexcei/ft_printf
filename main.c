@@ -2,12 +2,13 @@
 
 int     main(void)
 {
+
 	printf("{%*d}\n", 5, 42);
-	ft_printf("{%*d}\n", -5, 42);
+	ft_printf("{%*d}\n", 5, 42);
 	printf("\n");
 
-	printf("{%05.*d}\n", -11, 42);
-	ft_printf("{%05.*d}\n", -11, 42);
+	printf("{%05.*d}\n", -999, 42);
+	ft_printf("{%05.*d}\n",-999, 42);
 	printf("\n");
 
 	printf("%d\n", printf("{%05.*d}\n", -15, 42));

@@ -78,7 +78,7 @@ void	parser_number(t_box *box, t_tab *tab, int *pars)
 	}
 }
 
-void	parser_wildcard(t_box *box, t_tab *tab, int *pars)
+void	parser_wildcard(t_box *box, t_tab *tab)
 {
 	int	i;
 
@@ -87,11 +87,19 @@ void	parser_wildcard(t_box *box, t_tab *tab, int *pars)
 		tab->wildcard = 1;
 		if ((i = (int)va_arg(box->av, int)))
 		{
-			*pars = FT_ABS(i);
-			if (i < 0)
+			if (i < 0 && tab->dot_prec)
+				tab->dot_prec = 0;
+			else if (i < 0 && !tab->dot_prec)
 			{
-				tab->precision = i % 10;
 				tab->flag_min = 1;
+				tab->width = FT_ABS(i);
+			}
+			else
+			{
+				if (tab->dot_prec)
+					tab->precision = i;
+				else
+					tab->width = i;
 			}
 		}
 		else
@@ -105,13 +113,13 @@ void    parser_form(t_box *box, t_tab *tab)
 
 	i = box->i;
     parser_flag(box, tab);
-	parser_wildcard(box, tab, &tab->width);
+	parser_wildcard(box, tab);
 	parser_number(box, tab, &tab->width);
     if (box->format[box->i] == '.' && ++box->i)
     {
 		tab->dot_prec++;
     	tab->precision = 0;
-		parser_wildcard(box, tab, &tab->precision);
+		parser_wildcard(box, tab);
 		parser_number(box, tab, &tab->precision);
 	}
     parser_modifier(box, tab);
