@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_fprintf.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/08 14:47:40 by bpole             #+#    #+#             */
-/*   Updated: 2019/11/02 16:30:33 by bpole            ###   ########.fr       */
+/*   Created: 2019/11/15 13:43:52 by bpole             #+#    #+#             */
+/*   Updated: 2019/11/15 13:43:56 by bpole            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-void	ft_bzero(void *s, size_t n)
+int			ft_fprintf(int fd, const char *format, ...)
 {
-	ft_memset(s, '\0', n);
+	t_box	box;
+	t_tab	tab;
+
+	ft_bzero(&box, sizeof(t_box));
+	box.fd = fd;
+	box.format = format;
+	va_start(box.av, format);
+	parser(&box, &tab);
+	va_end(box.av);
+	return (box.res);
 }

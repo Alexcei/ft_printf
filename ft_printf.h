@@ -6,7 +6,7 @@
 /*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/27 11:57:03 by bpole             #+#    #+#             */
-/*   Updated: 2019/10/27 12:37:56 by bpole            ###   ########.fr       */
+/*   Updated: 2019/11/15 13:40:36 by bpole            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ typedef struct		s_tab
 }					t_tab;
 
 int					ft_printf(const char *format, ...);
+int					ft_fprintf(int fd, const char *format, ...);
 void				parser(t_box *box, t_tab *tab);
 void				output_s(t_box *box, t_tab *tab);
 void				output_c(t_box *box, t_tab *tab);
