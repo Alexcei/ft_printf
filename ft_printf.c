@@ -18,6 +18,7 @@ int			ft_printf(const char *format, ...)
 	t_tab	tab;
 
 	ft_bzero(&box, sizeof(t_box));
+	box.fd = 1;
 	box.format = format;
 	va_start(box.av, format);
 	parser(&box, &tab);
@@ -46,12 +47,12 @@ void		ft_putstr_count(t_box *box, char *s)
 	int		len;
 
 	len = ft_strlen(s);
-	write(1, &*s, len);
+	write(box->fd, &*s, len);
 	box->res += len;
 }
 
 void		ft_putchar_count(t_box *box, char c)
 {
-	write(1, &c, 1);
+	write(box->fd, &c, 1);
 	box->res++;
 }

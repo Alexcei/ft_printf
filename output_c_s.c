@@ -43,10 +43,10 @@ void			output_s(t_box *box, t_tab *tab)
 		tab->width = 0;
 	box->res += tab->len;
 	if (tab->flag_min)
-		write(1, box->str, tab->len);
+		write(box->fd, box->str, tab->len);
 	put_width(box, tab);
 	if (!tab->flag_min)
-		write(1, box->str, tab->len);
+		write(box->fd, box->str, tab->len);
 	free(box->str);
 }
 

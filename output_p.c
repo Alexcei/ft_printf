@@ -16,7 +16,7 @@ static void		put_secondary(t_box *box, t_tab *tab)
 {
 	if (tab->flag_min)
 	{
-		write(1, "0x", 2);
+		write(box->fd, "0x", 2);
 		while (tab->precision-- > 0)
 			ft_putchar_count(box, '0');
 		if (tab->n || !tab->dot_prec)
@@ -26,7 +26,7 @@ static void		put_secondary(t_box *box, t_tab *tab)
 		ft_putchar_count(box, ' ');
 	if (!tab->flag_min)
 	{
-		write(1, "0x", 2);
+		write(box->fd, "0x", 2);
 		while (tab->precision-- > 0)
 			ft_putchar_count(box, '0');
 		if (tab->n || !tab->dot_prec)

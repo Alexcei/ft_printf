@@ -6,7 +6,7 @@
 #    By: bpole <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/07 12:11:32 by bpole             #+#    #+#              #
-#    Updated: 2019/10/22 10:32:07 by bpole            ###   ########.fr        #
+#    Updated: 2019/11/16 13:32:25 by bpole            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -75,6 +75,7 @@ SRC = ft_strlen.c \
 	  ft_lstmap.c \
 	  ft_lstiter.c \
 	  ft_list_reverse.c \
+	  get_next_line.c \
 
 OBJ = $(SRC:.c=.o)
 

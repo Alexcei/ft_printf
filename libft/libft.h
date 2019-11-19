@@ -6,16 +6,19 @@
 /*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/07 12:09:58 by bpole             #+#    #+#             */
-/*   Updated: 2019/09/26 17:23:56 by bpole            ###   ########.fr       */
+/*   Updated: 2019/11/19 21:14:59 by bpole            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# define BUFF_SIZE 500
+
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "fcntl.h"
 
 # define FT_ABS(X) ((X) < 0 ? - (X) : (X))
 
@@ -26,6 +29,14 @@ typedef struct		s_list
 	struct s_list	*next;
 }					t_list;
 
+typedef struct		s_lst
+{
+	char			*res;
+	int				fd;
+	struct s_lst	*next;
+}					t_lst;
+
+int					get_next_line(const int fd, char **line);
 size_t				ft_strlen(const char *s);
 size_t				ft_strnlen(const char *s, size_t maxlen);
 size_t				ft_strlcat(char *dest, const char *src, size_t size);

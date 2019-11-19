@@ -6,7 +6,7 @@
 /*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/27 12:03:43 by bpole             #+#    #+#             */
-/*   Updated: 2019/10/27 12:39:42 by bpole            ###   ########.fr       */
+/*   Updated: 2019/11/19 21:16:28 by bpole            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,7 +110,7 @@ void			parser(t_box *box, t_tab *tab)
 		}
 		else
 		{
-			ft_putchar(box->format[box->i]);
+			ft_putchar_count(box, box->format[box->i]);
 			box->res++;
 			box->i++;
 		}

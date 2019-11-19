@@ -6,7 +6,7 @@
 /*   By: bpole <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/27 11:57:03 by bpole             #+#    #+#             */
-/*   Updated: 2019/11/15 13:40:36 by bpole            ###   ########.fr       */
+/*   Updated: 2019/11/19 21:17:09 by bpole            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ typedef struct		s_box
 	const char		*format;
 	char			*str;
 	int				res;
+	int				fd;
 	int				i;
 	va_list			av;
 
